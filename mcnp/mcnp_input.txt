@@ -1,31 +1,4 @@
 Simplified model of a reactor
-C Cell/surface numbering convention
-C   First digit indicates type of cell/surface
-C   1: Fuel, active region
-C   2: Fuel, non-active region
-C   3: Reflector, Water
-C   4: Control element
-C   5: Structural component
-C   6: Thermal column
-C   7: Beam port
-C
-C Cell level
-C   7 digits: pin level
-C   5 digits: bundle/lattice level
-C   3 digits: core/reactor level
-C
-C Fuel pin cell numbering logic
-C   [ TRCPPMM ]
-C   T: Type   - 1 for active, 2 for non-active region.
-C   R: Row    - Increasing number from East to West.
-C   C: Column - Increasing number from North to South.
-C   PP: Pin   - Number indicating pin location in a bundle.
-C     01: South East
-C     02: South West
-C     03: North West
-C     04: North East
-C   MM: Component number
-C
 C Structure level
 C   Pin level
 C     - master pin
@@ -52,26 +25,28 @@ C  Pin level
 C    Master fuel pin    
 C    Row:3 Column:1 Pin:2
 C      Active fuel region
-1310200 1190100 -7.21535327624 1000 -1001 1100 -1101 vol=10.5042     $Fuel_R1_A1
+1310200 1190100 -7.21535327624 1000 -1001 1100 -1101 vol=18.8496     $Fuel_R1_A1
          u=3102 imp:n=1                                              $Fuel_R1_A1
-1310201 1190101 -7.21535327624 1000 -1001 1101 -1102 vol=10.5042     $Fuel_R1_A2
+1310201 1190101 -7.21535327624 1000 -1001 1101 -1102 vol=18.8496     $Fuel_R1_A2
          u=3102 imp:n=1                                              $Fuel_R1_A2
-1310202 1190102 -7.21665795718 1000 -1001 1102 -1103 vol=10.5042     $Fuel_R1_A3
+1310202 1190102 -7.21665795718 1000 -1001 1102 -1103 vol=18.8496     $Fuel_R1_A3
          u=3102 imp:n=1                                              $Fuel_R1_A3
 C      Active cladding region
-2310200 1190199 -8.0 1001 -1002 1100 -1103 vol=3.85338 u=3102 imp:n=1      $Clad
+2310200 1190199 -8.0 1001 -1002 1100 -1103 vol=49.4801 u=3102 imp:n=1      $Clad
 C      Non-active region
-2310292 50002 -8.0 -1002 2003 -2004 vol=115.79851 u=3102        $Top_end_fitting
+2310292 50002 -8.0 -1002 2003 -2004 vol=12.5664 u=3102          $Top_end_fitting
          imp:n=1                                                $Top_end_fitting
-2310293 50002 -8.0 1001 -1002 1103 -2003 vol=5.2714 u=3102        $Top_refl_clad
+2310293 50002 -8.0 1001 -1002 1103 -2003 vol=10.9956 u=3102       $Top_refl_clad
          imp:n=1                                                  $Top_refl_clad
-2310294 30001 -1.7 -1001 1103 -2003 vol=82.73544 u=3102 imp:n=1   $Top_refl_meat
-2310295 20000 -6.506 -1000 1100 -1103 vol=12.06642 u=3102 imp:n=1        $Zr_rod
-2310296 30001 -1.7 -1001 2002 -1100 vol=82.73544 u=3102 imp:n=1   $Bot_refl_meat
-2310297 50002 -8.0 1001 -1002 2002 -1100 vol=5.2714 u=3102        $Bot_refl_clad
+2310294 30001 -1.7 -1001 1103 -2003 vol=25.1327 u=3102 imp:n=1    $Top_refl_meat
+2310295 20000 -6.506 -1000 1100 -1103 vol=7.0686 u=3102 imp:n=1          $Zr_rod
+2310296 30001 -1.7 -1001 2002 -1100 vol=25.1327 u=3102 imp:n=1    $Bot_refl_meat
+2310297 50002 -8.0 1001 -1002 2002 -1100 vol=10.9956 u=3102       $Bot_refl_clad
          imp:n=1                                                  $Bot_refl_clad
-2310298 50002 -8.0 -1002 2001 -2002 vol=93.28212 u=3102 imp:n=1 $Bot_end_fitting
-2310299 30000 -0.998207 (1002:-2001:2004) u=3102 imp:n=1         $External_water
+2310298 50002 -8.0 -1002 2000 -2002 vol=12.5664 u=3102 imp:n=1  $Bot_end_fitting
+2310299 30000 -0.998207 (1002:-2000:2004) u=3102 imp:n=1         $External_water
+C 1 0 -121 122 -123 124 2000 fill=3102 imp:n=1
+C 2 0 (121:-122:123:-124:-2000) imp:n=0
 C
 C    Copy fuel pins     
 C    Row:3 Column:1 Pin:3
@@ -156,26 +131,30 @@ C
 C  Bundle level
 C    Fuel bundle
 C    Row:3 Column:1
-13100  0 -121 122 -123 124 -119 120 lat=1 fill=0:1 0:1 0:0     $Fuel_pin_lattice
+13100  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0     $Fuel_pin_lattice
          3103 3102 3104 3101 u=13100 imp:n=1                   $Fuel_pin_lattice
-13101  0 -115 116 -117 118 -119 2000 fill=13100 u=31 imp:n=1  $Lattice_container
-13102  0 -115 116 -117 118 120 -2000 fill=20000 u=31 imp:n=1  $Adapter_container
+13101  0 -115 116 -117 118 2000 fill=13100 u=31 imp:n=1  $Lattice_container
+13102  0 -115 116 -117 118 -2000 fill=20000 u=31 imp:n=1  $Adapter_container
 C    Row:2 Column:2
-12200  0 -121 122 -123 124 -119 120 lat=1 fill=0:1 0:1 0:0     $Fuel_pin_lattice
+12200  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0     $Fuel_pin_lattice
          2203 2202 2204 2201 u=12200 imp:n=1                   $Fuel_pin_lattice
-12201  0 -115 116 -117 118 -119 2000 fill=12200 u=22 imp:n=1  $Lattice_container
-12202  0 -115 116 -117 118 120 -2000 fill=20000 u=22 imp:n=1  $Adapter_container
-C    Reflector element             
+12201  0 -115 116 -117 118 2000 fill=12200 u=22 imp:n=1  $Lattice_container
+12202  0 -115 116 -117 118 -2000 fill=20000 u=22 imp:n=1  $Adapter_container
+C    Bottom adapter                
+20000 50001 -2.7 -201 202 -203 204 205 -2000 u=20000 imp:n=1            $Adapter
+20001 30000 -0.998207 (201:-202:203:-204:-205:2000) u=20000           $Ext_water
+         imp:n=1                                                      $Ext_water
+C    Reflector element
 30001 30001 -1.7 -3001 3002 -3003 3004 3005 -3006 u=30000        $Refl_elem_meat
          imp:n=1                                                 $Refl_elem_meat
 30002 30000 -0.998207 (3001:-3002:3003:-3004:-3005:3006) u=30000 imp:n=1  $Ext_w
-30101  0 -115 116 -117 118 -119 2000 fill=30000 u=300 imp:n=1   $Refl_bundle_top
-30102  0 -115 116 -117 118 120 -2000 fill=20000 u=300 imp:n=1   $Refl_bundle_bot
+30101  0 -115 116 -117 118 2000 fill=30000 u=300 imp:n=1   $Refl_bundle_top
+30102  0 -115 116 -117 118 -2000 fill=20000 u=300 imp:n=1   $Refl_bundle_bot
 C
 C  Core level
 C    Transient rod - Row:5 Column:4 Pin:1 
 4310101 40001 -2.52 -4541 4542 -4543 u=3101 imp:n=1                     $TR_meat
-4310102 30000 -0.998207 (4541:-4542:4343) u=3101 imp:n=1              $Ext_water
+4310102 30000 -0.998207 (4541:-4542:4543) u=3101 imp:n=1              $Ext_water
 C    Control shroud
 40001 50001 -2.7 ((4001:-4002:4003:-4006):(-4004 4005)) -4007 2000       $Shroud
          u=401 imp:n=1                                                   $Shroud
@@ -193,26 +172,26 @@ C    Regulating blade - West
 40204 30000 -0.998207 (4201:-4202:4203:-4204:-4205:4206) u=412 imp:n=1  $Ext_Wtr
 C    Core lattice
 10102 30000 -0.998207 -501 502 -503 504 -305 306 u=104 imp:n=1
-10101 0 -111 112 114 -113 u=101 lat=1 imp:n=1
-        fill=0:0 0:3 0:0
+10101 0 112 -111 114 -113 u=101 lat=1 imp:n=1
+        fill=0:0 -2:0 0:0
         104
         300
         31
-10104 0 -111 112 114 -113 u=103 lat=1 imp:n=1 trcl=(15 0 0)
-        fill=0:0 0:3 0:0
+10104 0 112 -111 114 -113 u=102 lat=1 imp:n=1 trcl=(15 0 0)
+        fill=0:0 -2:0 0:0
         104
         22
         104
 C    Core region                          
-101  0 -103 104 -107 108 fill=101 u=100 imp:n=1                      $Core_north
-102 30000 -0.998207 -102 103 -107 108 fill=401 u=100 imp:n=1      $Control_north
-103  0 -101 102 -107 108 fill=102 u=100 imp:n=1                     $Core_center
-100  0 -11 12 -13 14 -15 16 fill=100 imp:n=1                        $Entire_core
-500 50001 -2.7 (11:-12:13:-14) -501 502 -503 504 -15 16 imp:n=1        $Grid_box
+101  0 -103 12 -13 14 fill=101 u=100 imp:n=1                          $Core_1
+102 30000 -0.998207 -102 103 -13 14 fill=401 u=100 imp:n=1            $Control
+103  0 -11 102 -13 14 fill=102 u=100 imp:n=1                          $Core_2
+100  0 -101 104 -107 108 -119 120 fill=100 imp:n=1                 $Entire_core
+500 50001 -2.7 (101:-104:107:-108) -501 502 -503 504 -119 120 imp:n=1  $Grid_box
 C
 C  Reactor level        
 C    Reactor pool                   
-300 30000 -0.998207 (501:-502:503:-504:15:-16) -301 302 -303 304 -305 306
+300 30000 -0.998207 (501:-502:503:-504:119:-120) -301 302 -303 304 -305 306
      imp:n=1                                                         $Pool_water
 C    External universe              
 999  0 (301:-302:303:-304:305:-306) imp:n=0                   $External_universe
@@ -230,7 +209,7 @@ C    Pin active region
 1103 pz 12.0                                                       $Fuel_Axial_3
 C    Fuel pin non-active region
 2000 pz 0.0                                              $-14.0844     $Bot_grid
-2001 pz 0.0                                       $-14.0843     $Bot_fitting_end
+C 2001 pz -0.0001                                   $-14.0843     $Bot_fitting_end
 2002 pz 1.0                                                        $Bot_refl_end
 2003 pz 14.0                                                       $Top_refl_end
 2004 pz 15.0                                                    $Top_fitting_end
@@ -244,10 +223,10 @@ C    Fuel bundle
 122 px -5.0                                                          $Pin_box_-x
 123 py 0                                                             $Pin_box_+y
 124 py -5.0                                                          $Pin_box_-y
-125 px 0.0001                                                  $Pin_box_dummy_+x
-126 px -5.0001                                                 $Pin_box_dummy_-x
-127 py 0.0001                                                  $Pin_box_dummy_+y
-128 py -5.0001                                                 $Pin_box_dummy_-y
+C 125 px 0.0001                                                  $Pin_box_dummy_+x
+C 126 px -5.0001                                                 $Pin_box_dummy_-x
+C 127 py 0.0001                                                  $Pin_box_dummy_+y
+C 128 py -5.0001                                                 $Pin_box_dummy_-y
 111 px 5.0                                                            $Bundle_+x
 112 px -5.0                                                           $Bundle_-x
 113 py 5.0                                                            $Bundle_+y
@@ -265,12 +244,12 @@ C    Bottom adapter
 204 py -3.0                                                          $Adapter_-y
 205 pz -6.0                                                      $Adapter_bottom
 C    Reflector element
-3001 px 5.0                                                   $Refl_elem_meat_+x
-3002 px -5.0                                                  $Refl_elem_meat_-x
-3003 py 5.0                                                   $Refl_elem_meat_+y
-3004 py -5.0                                                  $Refl_elem_meat_-y
-3005 pz 0.0                                                   $Refl_elem_meat_-z
-3006 pz 20.0                                                  $Refl_elem_meat_+z
+3001 px 4.0                                                   $Refl_elem_meat_+x
+3002 px -4.0                                                  $Refl_elem_meat_-x
+3003 py 4.0                                                   $Refl_elem_meat_+y
+3004 py -4.0                                                  $Refl_elem_meat_-y
+3005 pz 1                                                     $Refl_elem_meat_-z
+3006 pz 19.0                                                  $Refl_elem_meat_+z
 C
 C  Core level
 C    Transient rod
@@ -284,7 +263,7 @@ C    Control shroud
 4004 py 11.0                                                         $Shroud_++y
 4005 py 9.0                                                           $Shroud_+y
 4006 py -4.0                                                          $Shroud_-y
-4007 pz 20.0                                                         $Shroud_top
+4007 pz 22.0                                                         $Shroud_top
 C    Safety blades
 C    - Blades common
 4101 px 8.5                                                         $SB_meat_++x
@@ -303,8 +282,8 @@ C    Regulating blade
 4206 43 pz 28.0                                                          $RB_top
 C    Core region
 101 px 20.0                                                           $Core_+++x
-102 px 15.0                                                            $Core_++x
-103 px 10.0                                                             $Core_+x
+102 px 10.0                                                            $Core_++x
+103 px 5.0                                                              $Core_+x
 104 px -5.0                                                             $Core_-x
 107 py 25.0                                                             $Core_+y
 108 py -5.0                                                             $Core_-y
@@ -336,42 +315,6 @@ C    - Port 1
 C    Concrete shield                
 
 C  -------------------------------  DATA CARD  ------------------------------  C
-C  Burnup               
-burn  time=1 1 1 2 2 3 5 10 25 50 power=1 pfrac=1 9R bopt=1 24 -1  $Burnup_parms
-      mat=  1165500 16I 1165517  1165600 16I 1165617                   $Burn_mat
-         1165700 16I 1165717  1165800 16I 1165817  1165900 16I 1165917 $Burn_mat
-         1166000 16I 1166017  1166100 16I 1166117  1166200 16I 1166217 $Burn_mat
-         1166300 16I 1166317  1166400 16I 1166417  1166500 16I 1166517 $Burn_mat
-         1166600 16I 1166617  1166700 16I 1166717  1166800 16I 1166817 $Burn_mat
-         1166900 16I 1166917  1167000 16I 1167017  1167100 16I 1167117 $Burn_mat
-         1167200 16I 1167217  1167300 16I 1167317  1167400 16I 1167417 $Burn_mat
-         1167500 16I 1167517  1167600 16I 1167617  1167700 16I 1167717 $Burn_mat
-         1167800 16I 1167817  1167900 16I 1167917  1168000 16I 1168017 $Burn_mat
-         1168100 16I 1168117  1168200 16I 1168217  1168300 16I 1168317 $Burn_mat
-         1168400 16I 1168417  1168500 16I 1168517  1168600 16I 1168617 $Burn_mat
-         1168700 16I 1168717  1168800 16I 1168817  1168900 16I 1168917 $Burn_mat
-         1169000 16I 1169017  1169100 16I 1169117  1169200 16I 1169217 $Burn_mat
-         1169300 16I 1169317  1169400 16I 1169417  1169500 16I 1169517 $Burn_mat
-         1169600 16I 1169617  1169700 16I 1169717  1169800 16I 1169817 $Burn_mat
-         1169900 16I 1169917  1170000 16I 1170017  1170100 16I 1170117 $Burn_mat
-         1170200 16I 1170217  1170300 16I 1170317  1170400 16I 1170417 $Burn_mat
-         1170500 16I 1170517  1170600 16I 1170617  1170700 16I 1170717 $Burn_mat
-         1170800 16I 1170817  1170900 16I 1170917  1171000 16I 1171017 $Burn_mat
-         1171100 16I 1171117  1171200 16I 1171217  1171300 16I 1171317 $Burn_mat
-         1171400 16I 1171417  1171500 16I 1171517  1171600 16I 1171617 $Burn_mat
-         1171700 16I 1171717  1171800 16I 1171817  1171900 16I 1171917 $Burn_mat
-         1172000 16I 1172017  1172100 16I 1172117  1172200 16I 1172217 $Burn_mat
-         1172300 16I 1172317  1172400 16I 1172417  1172500 16I 1172517 $Burn_mat
-         1172600 16I 1172617  1172700 16I 1172717  1172800 16I 1172817 $Burn_mat
-         1172900 16I 1172917  1173000 16I 1173017  1173100 16I 1173117 $Burn_mat
-         1173200 16I 1173217  1173300 16I 1173317  1173400 16I 1173417 $Burn_mat
-         1173500 16I 1173517  1174800 16I 1174817  1174900 16I 1174917 $Burn_mat
-      omit= -1 46 6014 7016 39087 39092 39093 40089 40097 41091       $Burn_omit
-         41092 41096 41097 41098 41099 42091 42093 66159 67163 67164  $Burn_omit
-         67166 68163 68165 68169 69166 69167 69171 69172 69173 70168  $Burn_omit
-         70169 70170 70171 70172 70173 70174 70175 70176 71173 71174  $Burn_omit
-         71177 72175 72181 72182 73179 73183 74179 74181              $Burn_omit
-C
 C  MATERIAL
 C    Fuel region
 C name: Fuel, 11901, Bottom
@@ -1294,5 +1237,5 @@ tr43    0 0 7                                                  $Regulating_blade
 C
 C  Source specification 
 kcode 10000 1 20 60
-ksrc  -2.4 -2.4 20
+ksrc  -2.0 -2.0 7.5
 C  ------------------------------  End of file  -----------------------------  C
