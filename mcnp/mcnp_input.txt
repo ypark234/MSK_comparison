@@ -147,7 +147,8 @@ C    Bottom adapter
 C    Reflector element
 30001 30001 -1.7 -3001 3002 -3003 3004 3005 -3006 u=30000        $Refl_elem_meat
          imp:n=1                                                 $Refl_elem_meat
-30002 30000 -0.998207 (3001:-3002:3003:-3004:-3005:3006) u=30000 imp:n=1  $Ext_w
+30002 50001 -2.7 (3001:-3002:3003:-3004:-3005:3006) -3007 u=30000 imp:n=1  $Clad
+30003 30000 -0.998207 (-2000:3007) u=30000 imp:n=1                    $Ext_water
 30101  0 -115 116 -117 118 2000 fill=30000 u=300 imp:n=1   $Refl_bundle_top
 30102  0 -115 116 -117 118 -2000 fill=20000 u=300 imp:n=1   $Refl_bundle_bot
 C
@@ -244,12 +245,13 @@ C    Bottom adapter
 204 py -3.0                                                          $Adapter_-y
 205 pz -6.0                                                      $Adapter_bottom
 C    Reflector element
-3001 px 4.0                                                   $Refl_elem_meat_+x
-3002 px -4.0                                                  $Refl_elem_meat_-x
-3003 py 4.0                                                   $Refl_elem_meat_+y
-3004 py -4.0                                                  $Refl_elem_meat_-y
-3005 pz 1                                                     $Refl_elem_meat_-z
-3006 pz 19.0                                                  $Refl_elem_meat_+z
+3001 px 3.5                                                   $Refl_elem_meat_+x
+3002 px -3.5                                                  $Refl_elem_meat_-x
+3003 py 3.5                                                   $Refl_elem_meat_+y
+3004 py -3.5                                                  $Refl_elem_meat_-y
+3005 pz 1.5                                                   $Refl_elem_meat_-z
+3006 pz 14.5                                                  $Refl_elem_meat_+z
+3007 pz 16.0                                                      $Refl_elem_top
 C
 C  Core level
 C    Transient rod
