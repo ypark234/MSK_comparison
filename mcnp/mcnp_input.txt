@@ -9,50 +9,46 @@ C     - Bottom adapters
 C     - Reflector elements
 C   Core level
 C     - Transient rod
-C     - Control shrouds: North, South
-C     - Safety blades: SB1, SB2, SB3
+C     - Control shrouds
+C     - Safety blades
 C     - Regulating blade
 C     - Core lattices
 C     - Core regions
 C   Reactor level
 C     - Reactor pool
 C     - Thermal column
-C     - Beam ports: BP1, BP2, BP3, BP4
+C     - Beam ports
 C     - Concrete shield
 C 
 C  -------------------------------  CELL CARD  ------------------------------  C
 C  Pin level
-C    Master fuel pin    
+C    Master fuel pin
 C    Row:3 Column:1 Pin:2
 C      Active fuel region
-1310200 1190100 -7.21535327624 1000 -1001 1100 -1101 vol=18.8496     $Fuel_R1_A1
-         u=3102 imp:n=1                                              $Fuel_R1_A1
-1310201 1190101 -7.21535327624 1000 -1001 1101 -1102 vol=18.8496     $Fuel_R1_A2
-         u=3102 imp:n=1                                              $Fuel_R1_A2
-1310202 1190102 -7.21665795718 1000 -1001 1102 -1103 vol=18.8496     $Fuel_R1_A3
-         u=3102 imp:n=1                                              $Fuel_R1_A3
+1310200 1190100 -7.2 1000 -1001 1100 -1101 vol=18.8496               $Fuel_R1_A1
+        u=3102 imp:n=1                                               $Fuel_R1_A1
+1310201 1190101 -7.2 1000 -1001 1101 -1102 vol=18.8496               $Fuel_R1_A2
+        u=3102 imp:n=1                                               $Fuel_R1_A2
+1310202 1190102 -7.2 1000 -1001 1102 -1103 vol=18.8496               $Fuel_R1_A3
+        u=3102 imp:n=1                                               $Fuel_R1_A3
 C      Active cladding region
 2310200 1190199 -8.0 1001 -1002 1100 -1103 vol=49.4801 u=3102 imp:n=1      $Clad
 C      Non-active region
-2310292 50002 -8.0 -1002 2003 -2004 vol=12.5664 u=3102          $Top_end_fitting
-         imp:n=1                                                $Top_end_fitting
+2310292 50002 -8.0 -1002 2003 -2004 vol=12.5664 u=3102 imp:n=1  $Top_end_fitting
 2310293 50002 -8.0 1001 -1002 1103 -2003 vol=10.9956 u=3102       $Top_refl_clad
-         imp:n=1                                                  $Top_refl_clad
+        imp:n=1                                                   $Top_refl_clad
 2310294 30001 -1.7 -1001 1103 -2003 vol=25.1327 u=3102 imp:n=1    $Top_refl_meat
-2310295 20000 -6.506 -1000 1100 -1103 vol=7.0686 u=3102 imp:n=1          $Zr_rod
+2310295 20000 -6.5 -1000 1100 -1103 vol=7.0686 u=3102 imp:n=1            $Zr_rod
 2310296 30001 -1.7 -1001 2002 -1100 vol=25.1327 u=3102 imp:n=1    $Bot_refl_meat
 2310297 50002 -8.0 1001 -1002 2002 -1100 vol=10.9956 u=3102       $Bot_refl_clad
-         imp:n=1                                                  $Bot_refl_clad
+        imp:n=1                                                   $Bot_refl_clad
 2310298 50002 -8.0 -1002 2000 -2002 vol=12.5664 u=3102 imp:n=1  $Bot_end_fitting
 2310299 30000 -0.998207 (1002:-2000:2004) u=3102 imp:n=1         $External_water
-C 1 0 -121 122 -123 124 2000 fill=3102 imp:n=1
-C 2 0 (121:-122:123:-124:-2000) imp:n=0
-C
-C    Copy fuel pins     
+C    Copy fuel pins
 C    Row:3 Column:1 Pin:3
-1310300 like 1310200 but u=3103 mat=1190200 rho=-7.21047045135       $Fuel_R1_A1
-1310301 like 1310201 but u=3103 mat=1190201 rho=-7.21047045135       $Fuel_R1_A2
-1310302 like 1310202 but u=3103 mat=1190202 rho=-7.21047045135       $Fuel_R1_A3
+1310300 like 1310200 but u=3103 mat=1190200                          $Fuel_R1_A1
+1310301 like 1310201 but u=3103 mat=1190201                          $Fuel_R1_A2
+1310302 like 1310202 but u=3103 mat=1190202                          $Fuel_R1_A3
 2310300 like 2310200 but u=3103 mat=1190299                                $Clad
 2310392 like 2310292 but u=3103                                 $Top_end_fitting
 2310393 like 2310293 but u=3103                                   $Top_refl_clad
@@ -63,9 +59,9 @@ C    Row:3 Column:1 Pin:3
 2310398 like 2310298 but u=3103                                 $Bot_end_fitting
 2310399 like 2310299 but u=3103                                  $External_water
 C    Row:3 Column:1 Pin:4
-1310400 like 1310200 but u=3104 mat=1190300 rho=-7.21047045135       $Fuel_R1_A1
-1310401 like 1310201 but u=3104 mat=1190301 rho=-7.21047045135       $Fuel_R1_A2
-1310402 like 1310202 but u=3104 mat=1190302 rho=-7.21047045135       $Fuel_R1_A3
+1310400 like 1310200 but u=3104 mat=1190300                          $Fuel_R1_A1
+1310401 like 1310201 but u=3104 mat=1190301                          $Fuel_R1_A2
+1310402 like 1310202 but u=3104 mat=1190302                          $Fuel_R1_A3
 2310400 like 2310200 but u=3104 mat=1190399                                $Clad
 2310492 like 2310292 but u=3104                                 $Top_end_fitting
 2310493 like 2310293 but u=3104                                   $Top_refl_clad
@@ -76,9 +72,9 @@ C    Row:3 Column:1 Pin:4
 2310498 like 2310298 but u=3104                                 $Bot_end_fitting
 2310499 like 2310299 but u=3104                                  $External_water
 C    Row:2 Column:2 Pin:1
-1220100 like 1310200 but u=2201 mat=1190400 rho=-7.21047045135       $Fuel_R1_A1
-1220101 like 1310201 but u=2201 mat=1190401 rho=-7.21047045135       $Fuel_R1_A2
-1220102 like 1310202 but u=2201 mat=1190402 rho=-7.21047045135       $Fuel_R1_A3
+1220100 like 1310200 but u=2201 mat=1190400                          $Fuel_R1_A1
+1220101 like 1310201 but u=2201 mat=1190401                          $Fuel_R1_A2
+1220102 like 1310202 but u=2201 mat=1190402                          $Fuel_R1_A3
 2220100 like 2310200 but u=2201 mat=1190499                                $Clad
 2220192 like 2310292 but u=2201                                 $Top_end_fitting
 2220193 like 2310293 but u=2201                                   $Top_refl_clad
@@ -89,9 +85,9 @@ C    Row:2 Column:2 Pin:1
 2220198 like 2310298 but u=2201                                 $Bot_end_fitting
 2220199 like 2310299 but u=2201                                  $External_water
 C    Row:2 Column:2 Pin:2
-1220200 like 1310200 but u=2202 mat=1190500 rho=-7.21047045135       $Fuel_R1_A1
-1220201 like 1310201 but u=2202 mat=1190501 rho=-7.21047045135       $Fuel_R1_A2
-1220202 like 1310202 but u=2202 mat=1190502 rho=-7.21047045135       $Fuel_R1_A3
+1220200 like 1310200 but u=2202 mat=1190500                          $Fuel_R1_A1
+1220201 like 1310201 but u=2202 mat=1190501                          $Fuel_R1_A2
+1220202 like 1310202 but u=2202 mat=1190502                          $Fuel_R1_A3
 2220200 like 2310200 but u=2202 mat=1190599                                $Clad
 2220292 like 2310292 but u=2202                                 $Top_end_fitting
 2220293 like 2310293 but u=2202                                   $Top_refl_clad
@@ -102,9 +98,9 @@ C    Row:2 Column:2 Pin:2
 2220298 like 2310298 but u=2202                                 $Bot_end_fitting
 2220299 like 2310299 but u=2202                                  $External_water
 C    Row:2 Column:2 Pin:3
-1220300 like 1310200 but u=2203 mat=1190600 rho=-7.21047045135       $Fuel_R1_A1
-1220301 like 1310201 but u=2203 mat=1190601 rho=-7.21047045135       $Fuel_R1_A2
-1220302 like 1310202 but u=2203 mat=1190602 rho=-7.21047045135       $Fuel_R1_A3
+1220300 like 1310200 but u=2203 mat=1190600                          $Fuel_R1_A1
+1220301 like 1310201 but u=2203 mat=1190601                          $Fuel_R1_A2
+1220302 like 1310202 but u=2203 mat=1190602                          $Fuel_R1_A3
 2220300 like 2310200 but u=2203 mat=1190699                                $Clad
 2220392 like 2310292 but u=2203                                 $Top_end_fitting
 2220393 like 2310293 but u=2203                                   $Top_refl_clad
@@ -115,9 +111,9 @@ C    Row:2 Column:2 Pin:3
 2220398 like 2310298 but u=2203                                 $Bot_end_fitting
 2220399 like 2310299 but u=2203                                  $External_water
 C    Row:2 Column:2 Pin:4
-1220400 like 1310200 but u=2204 mat=1190700 rho=-7.21047045135       $Fuel_R1_A1
-1220401 like 1310201 but u=2204 mat=1190701 rho=-7.21047045135       $Fuel_R1_A2
-1220402 like 1310202 but u=2204 mat=1190702 rho=-7.21047045135       $Fuel_R1_A3
+1220400 like 1310200 but u=2204 mat=1190700                          $Fuel_R1_A1
+1220401 like 1310201 but u=2204 mat=1190701                          $Fuel_R1_A2
+1220402 like 1310202 but u=2204 mat=1190702                          $Fuel_R1_A3
 2220400 like 2310200 but u=2204 mat=1190799                                $Clad
 2220492 like 2310292 but u=2204                                 $Top_end_fitting
 2220493 like 2310293 but u=2204                                   $Top_refl_clad
@@ -131,16 +127,16 @@ C
 C  Bundle level
 C    Fuel bundle
 C    Row:3 Column:1
-13100  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0     $Fuel_pin_lattice
+13100  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0              $Fuel_pin_lattice
          3103 3102 3104 3101 u=13100 imp:n=1                   $Fuel_pin_lattice
-13101  0 -115 116 -117 118 2000 fill=13100 u=31 imp:n=1  $Lattice_container
-13102  0 -115 116 -117 118 -2000 fill=20000 u=31 imp:n=1  $Adapter_container
+13101  0 -115 116 -117 118 2000 fill=13100 u=31 imp:n=1       $Lattice_container
+13102  0 -115 116 -117 118 -2000 fill=20000 u=31 imp:n=1      $Adapter_container
 C    Row:2 Column:2
-12200  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0     $Fuel_pin_lattice
+12200  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0              $Fuel_pin_lattice
          2203 2202 2204 2201 u=12200 imp:n=1                   $Fuel_pin_lattice
-12201  0 -115 116 -117 118 2000 fill=12200 u=22 imp:n=1  $Lattice_container
-12202  0 -115 116 -117 118 -2000 fill=20000 u=22 imp:n=1  $Adapter_container
-C    Bottom adapter                
+12201  0 -115 116 -117 118 2000 fill=12200 u=22 imp:n=1       $Lattice_container
+12202  0 -115 116 -117 118 -2000 fill=20000 u=22 imp:n=1      $Adapter_container
+C    Bottom adapter
 20000 50001 -2.7 -201 202 -203 204 205 -2000 u=20000 imp:n=1            $Adapter
 20001 30000 -0.998207 (201:-202:203:-204:-205:2000) u=20000           $Ext_water
          imp:n=1                                                      $Ext_water
@@ -149,11 +145,11 @@ C    Reflector element
          imp:n=1                                                 $Refl_elem_meat
 30002 50001 -2.7 (3001:-3002:3003:-3004:-3005:3006) -3007 u=30000 imp:n=1  $Clad
 30003 30000 -0.998207 (-2000:3007) u=30000 imp:n=1                    $Ext_water
-30101  0 -115 116 -117 118 2000 fill=30000 u=300 imp:n=1   $Refl_bundle_top
-30102  0 -115 116 -117 118 -2000 fill=20000 u=300 imp:n=1   $Refl_bundle_bot
+30101  0 -115 116 -117 118 2000 fill=30000 u=300 imp:n=1        $Refl_bundle_top
+30102  0 -115 116 -117 118 -2000 fill=20000 u=300 imp:n=1       $Refl_bundle_bot
 C
 C  Core level
-C    Transient rod - Row:5 Column:4 Pin:1 
+C    Transient rod - Row:5 Column:4 Pin:1
 4310101 40001 -2.52 -4541 4542 -4543 u=3101 imp:n=1                     $TR_meat
 4310102 30000 -0.998207 (4541:-4542:4543) u=3101 imp:n=1              $Ext_water
 C    Control shroud
@@ -183,18 +179,18 @@ C    Core lattice
         104
         22
         104
-C    Core region                          
-101  0 -103 12 -13 14 fill=101 u=100 imp:n=1                          $Core_1
-102 30000 -0.998207 -102 103 -13 14 fill=401 u=100 imp:n=1            $Control
-103  0 -11 102 -13 14 fill=102 u=100 imp:n=1                          $Core_2
-100  0 -101 104 -107 108 -119 120 fill=100 imp:n=1                 $Entire_core
+C    Core region
+101  0 -103 12 -13 14 fill=101 u=100 imp:n=1                             $Core_1
+102 30000 -0.998207 -102 103 -13 14 fill=401 u=100 imp:n=1              $Control
+103  0 -11 102 -13 14 fill=102 u=100 imp:n=1                             $Core_2
+100  0 -101 104 -107 108 -119 120 fill=100 imp:n=1                  $Entire_core
 500 50001 -2.7 (101:-104:107:-108) -501 502 -503 504 -119 120 imp:n=1  $Grid_box
 C
-C  Reactor level        
-C    Reactor pool                   
+C  Reactor level
+C    Reactor pool
 300 30000 -0.998207 (501:-502:503:-504:119:-120) -301 302 -303 304 -305 306
      imp:n=1                                                         $Pool_water
-C    External universe              
+C    External universe
 999  0 (301:-302:303:-304:305:-306) imp:n=0                   $External_universe
 
 C  -----------------------------  SURFACE CARD  -----------------------------  C
