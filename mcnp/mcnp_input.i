@@ -143,10 +143,11 @@ C    Bottom adapter
 C    Reflector element
 30001 30001 -1.7 3001 -3002 3003 -3004 3005 -3006 u=30000        $Refl_elem_meat
          imp:n=1                                                 $Refl_elem_meat
-30002 50001 -2.7 (-3001:3002:-3003:3004:-3005:3006) -3007 u=30000 imp:n=1  $Clad
+30002 50001 -2.7 (-3001:3002:-3003:3004:-3005:3006) -3007        $Refl_elem_Clad
+         u=30000 imp:n=1                                         $Refl_elem_Clad
 30003 30000 -0.998207 3007 u=30000 imp:n=1                            $Ext_water
-30101  0 125 -126 127 -128 2000 fill=30000 u=300 imp:n=1        $Refl_bundle_top
-30102  0 125 -126 127 -128 -2000 fill=20000 u=300 imp:n=1       $Refl_bundle_bot
+30101  0 125 -126 127 -128 2000 fill=30000 u=300 imp:n=1    $Refl_elem_container
+30102  0 125 -126 127 -128 -2000 fill=20000 u=300 imp:n=1     $Adapter_container
 C
 C  Core level
 C    Transient rod - Row:5 Column:4 Pin:1
@@ -180,16 +181,16 @@ C    Core lattice
         22
         100
 C    Core region
-101  0 141 -132 143 -144 fill=101 u=10 imp:n=1                           $Core_1
-102 30000 -0.998207 132 -133 143 -144 fill=401 u=10 imp:n=1             $Control
-103  0 133 -142 143 -144 fill=102 u=10 imp:n=1                           $Core_2
+101  0 141 -132 143 -144 fill=101 u=10 imp:n=1                    $Core_region_1
+102 30000 -0.998207 132 -133 143 -144 fill=401 u=10 imp:n=1    $Control_region_1
+103  0 133 -142 143 -144 fill=102 u=10 imp:n=1                    $Core_region_2
 100  0 131 -134 135 -136 137 -138 fill=10 imp:n=1                   $Entire_core
-500 50001 -2.7 (-131:134:-135:136) 501 -502 503 -504 137 -138 imp:n=1  $Grid_box
+500 50001 -2.7 (-131:134:-135:136) 501 -502 503 -504 137 -138 imp:n=1  $Core_box
 C
 C  Reactor level
 C    Reactor pool
-300 30000 -0.998207 (-501:502:-503:504:-137:138) 301 -302 303 -304 305 -306
-     imp:n=1                                                         $Pool_water
+300 30000 -0.998207 (-501:502:-503:504:-137:138) 301 -302 303 -304   $Pool_water
+     305 -306 imp:n=1                                                $Pool_water
 C    External universe
 999  0 (-301:302:-303:304:-305:306) imp:n=0                   $External_universe
 
