@@ -34,16 +34,16 @@ C      Active fuel region
 C      Active cladding region
 2310200 1190199 -8.0 1001 -1002 1100 -1103 vol=49.4801 u=3102 imp:n=1      $Clad
 C      Non-active region
-2310292 50002 -8.0 -1002 2003 -2004 vol=12.5664 u=3102 imp:n=1  $Top_end_fitting
-2310293 50002 -8.0 1001 -1002 1103 -2003 vol=10.9956 u=3102       $Top_refl_clad
+2310292 50002 -8.0 -1002 2002 -2003 vol=12.5664 u=3102 imp:n=1  $Top_end_fitting
+2310293 50002 -8.0 1001 -1002 1103 -2002 vol=10.9956 u=3102       $Top_refl_clad
         imp:n=1                                                   $Top_refl_clad
-2310294 30001 -1.7 -1001 1103 -2003 vol=25.1327 u=3102 imp:n=1    $Top_refl_meat
+2310294 30001 -1.7 -1001 1103 -2002 vol=25.1327 u=3102 imp:n=1    $Top_refl_meat
 2310295 20000 -6.5 -1000 1100 -1103 vol=7.0686 u=3102 imp:n=1            $Zr_rod
-2310296 30001 -1.7 -1001 2002 -1100 vol=25.1327 u=3102 imp:n=1    $Bot_refl_meat
-2310297 50002 -8.0 1001 -1002 2002 -1100 vol=10.9956 u=3102       $Bot_refl_clad
+2310296 30001 -1.7 -1001 2001 -1100 vol=25.1327 u=3102 imp:n=1    $Bot_refl_meat
+2310297 50002 -8.0 1001 -1002 2001 -1100 vol=10.9956 u=3102       $Bot_refl_clad
         imp:n=1                                                   $Bot_refl_clad
-2310298 50002 -8.0 -1002 2000 -2002 vol=12.5664 u=3102 imp:n=1  $Bot_end_fitting
-2310299 30000 -0.998207 (1002:-2000:2004) u=3102 imp:n=1         $External_water
+2310298 50002 -8.0 -1002 2000 -2001 vol=12.5664 u=3102 imp:n=1  $Bot_end_fitting
+2310299 30000 -0.998207 (1002:-2000:2003) u=3102 imp:n=1         $External_water
 C    Copy fuel pins
 C    Row:3 Column:1 Pin:3
 1310300 like 1310200 but u=3103 mat=1190200                          $Fuel_R1_A1
@@ -127,71 +127,71 @@ C
 C  Bundle level
 C    Fuel bundle
 C    Row:3 Column:1
-13100  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0              $Fuel_pin_lattice
+13100  0 -112 111 -114 113 lat=1 fill=0:1 0:1 0:0              $Fuel_pin_lattice
          3103 3102 3104 3101 u=13100 imp:n=1                   $Fuel_pin_lattice
-13101  0 -115 116 -117 118 2000 fill=13100 u=31 imp:n=1       $Lattice_container
-13102  0 -115 116 -117 118 -2000 fill=20000 u=31 imp:n=1      $Adapter_container
+13101  0 125 -126 127 -128 2000 fill=13100 u=31 imp:n=1       $Lattice_container
+13102  0 125 -126 127 -128 -2000 fill=20000 u=31 imp:n=1      $Adapter_container
 C    Row:2 Column:2
-12200  0 -121 122 -123 124 lat=1 fill=0:1 0:1 0:0              $Fuel_pin_lattice
+12200  0 -112 111 -114 113 lat=1 fill=0:1 0:1 0:0              $Fuel_pin_lattice
          2203 2202 2204 2201 u=12200 imp:n=1                   $Fuel_pin_lattice
-12201  0 -115 116 -117 118 2000 fill=12200 u=22 imp:n=1       $Lattice_container
-12202  0 -115 116 -117 118 -2000 fill=20000 u=22 imp:n=1      $Adapter_container
+12201  0 125 -126 127 -128 2000 fill=12200 u=22 imp:n=1       $Lattice_container
+12202  0 125 -126 127 -128 -2000 fill=20000 u=22 imp:n=1      $Adapter_container
 C    Bottom adapter
-20000 50001 -2.7 -201 202 -203 204 205 -2000 u=20000 imp:n=1            $Adapter
-20001 30000 -0.998207 (201:-202:203:-204:-205:2000) u=20000           $Ext_water
+50000 50001 -2.7 5001 -5002 5003 -5004 5005 -2000 u=20000 imp:n=1       $Adapter
+50001 30000 -0.998207 (-5001:5002:-5003:5004:-5005:2000) u=20000      $Ext_water
          imp:n=1                                                      $Ext_water
 C    Reflector element
-30001 30001 -1.7 -3001 3002 -3003 3004 3005 -3006 u=30000        $Refl_elem_meat
+30001 30001 -1.7 3001 -3002 3003 -3004 3005 -3006 u=30000        $Refl_elem_meat
          imp:n=1                                                 $Refl_elem_meat
-30002 50001 -2.7 (3001:-3002:3003:-3004:-3005:3006) -3007 u=30000 imp:n=1  $Clad
+30002 50001 -2.7 (-3001:3002:-3003:3004:-3005:3006) -3007 u=30000 imp:n=1  $Clad
 30003 30000 -0.998207 (-2000:3007) u=30000 imp:n=1                    $Ext_water
-30101  0 -115 116 -117 118 2000 fill=30000 u=300 imp:n=1        $Refl_bundle_top
-30102  0 -115 116 -117 118 -2000 fill=20000 u=300 imp:n=1       $Refl_bundle_bot
+30101  0 125 -126 127 -128 2000 fill=30000 u=300 imp:n=1        $Refl_bundle_top
+30102  0 125 -126 127 -128 -2000 fill=20000 u=300 imp:n=1       $Refl_bundle_bot
 C
 C  Core level
 C    Transient rod - Row:5 Column:4 Pin:1
 4310101 40001 -2.52 -4541 4542 -4543 u=3101 imp:n=1                     $TR_meat
 4310102 30000 -0.998207 (4541:-4542:4543) u=3101 imp:n=1              $Ext_water
 C    Control shroud
-40001 50001 -2.7 ((4001:-4002:4003:-4006):(-4004 4005)) -4007 2000       $Shroud
+40001 50001 -2.7 ((-4001:4002:-4003:4006):(4004 -4005)) -4007 2000       $Shroud
          u=401 imp:n=1                                                   $Shroud
-40002 30000 -0.998207 -4001 4002 -4003 4004 2000 fill=411 u=401       $East_Room
+40002 30000 -0.998207 4001 -4002 4005 -4006 2000 fill=411 u=401       $East_Room
          imp:n=1                                                      $East_Room
-40003 30000 -0.998207 -4001 4002 -4005 4006 2000 fill=412 u=401       $West_Room
+40003 30000 -0.998207 4001 -4002 4003 -4004 2000 fill=412 u=401       $West_Room
          imp:n=1                                                      $West_Room
-40004 30000 -0.998207 (-2000:(4007 ((4001:-4002:4003:-4006):(-4004    $Ext_Water
-         4005)))) u=401 imp:n=1                                       $Ext_Water
+40004 30000 -0.998207 (-2000:(4007 ((-4001:4002:-4003:4006):(4004     $Ext_Water
+        -4005)))) u=401 imp:n=1                                       $Ext_Water
 C    Safety blade - East
-40101 40002 -2.53 -4101 4102 -4103 4104 4120 -4121 u=411 imp:n=1        $SB_meat
-40102 30000 -0.998207 (4101:-4102:4103:-4104:-4120:4121) u=411 imp:n=1  $Ext_Wtr
+40101 40002 -2.53 4101 -4102 4103 -4104 4120 -4121 u=411 imp:n=1        $SB_meat
+40102 30000 -0.998207 (-4101:4102:-4103:4104:-4120:4121) u=411 imp:n=1  $Ext_Wtr
 C    Regulating blade - West
-40201 50002 -8.0 -4201 4202 -4203 4204 4205 -4206 u=412 imp:n=1        $RB_sheet
-40204 30000 -0.998207 (4201:-4202:4203:-4204:-4205:4206) u=412 imp:n=1  $Ext_Wtr
+40201 50002 -8.0 4201 -4202 4203 -4204 4205 -4206 u=412 imp:n=1        $RB_sheet
+40204 30000 -0.998207 (-4201:4202:-4203:4204:-4205:4206) u=412 imp:n=1  $Ext_Wtr
 C    Core lattice
-10102 30000 -0.998207 -501 502 -503 504 -305 306 u=104 imp:n=1
-10101 0 112 -111 114 -113 u=101 lat=1 imp:n=1
+10100 30000 -0.998207 501 -502 503 -504 305 -306 u=100 imp:n=1
+10101 0 121 -122 123 -124 u=101 lat=1 imp:n=1
         fill=0:0 -2:0 0:0
-        104
+        100
         300
         31
-10104 0 112 -111 114 -113 u=102 lat=1 imp:n=1 trcl=(15 0 0)
+10102 0 121 -122 123 -124 u=102 lat=1 imp:n=1 trcl=(15 0 0)
         fill=0:0 -2:0 0:0
-        104
+        100
         22
-        104
+        100
 C    Core region
-101  0 -103 12 -13 14 fill=101 u=100 imp:n=1                             $Core_1
-102 30000 -0.998207 -102 103 -13 14 fill=401 u=100 imp:n=1              $Control
-103  0 -11 102 -13 14 fill=102 u=100 imp:n=1                             $Core_2
-100  0 -101 104 -107 108 -119 120 fill=100 imp:n=1                  $Entire_core
-500 50001 -2.7 (101:-104:107:-108) -501 502 -503 504 -119 120 imp:n=1  $Grid_box
+101  0 141 -132 143 -144 fill=101 u=10 imp:n=1                           $Core_1
+102 30000 -0.998207 132 -133 143 -144 fill=401 u=10 imp:n=1             $Control
+103  0 133 -142 143 -144 fill=102 u=10 imp:n=1                           $Core_2
+100  0 131 -134 135 -136 137 -138 fill=10 imp:n=1                   $Entire_core
+500 50001 -2.7 (-131:134:-135:136) 501 -502 503 -504 137 -138 imp:n=1  $Grid_box
 C
 C  Reactor level
 C    Reactor pool
-300 30000 -0.998207 (501:-502:503:-504:119:-120) -301 302 -303 304 -305 306
+300 30000 -0.998207 (-501:502:-503:504:-137:138) 301 -302 303 -304 305 -306
      imp:n=1                                                         $Pool_water
 C    External universe
-999  0 (301:-302:303:-304:305:-306) imp:n=0                   $External_universe
+999  0 (-301:302:-303:304:-305:306) imp:n=0                   $External_universe
 
 C  -----------------------------  SURFACE CARD  -----------------------------  C
 C  Pin level
@@ -205,46 +205,39 @@ C    Pin active region
 1102 pz 9.0                                                        $Fuel_Axial_2
 1103 pz 12.0                                                       $Fuel_Axial_3
 C    Fuel pin non-active region
-2000 pz 0.0                                              $-14.0844     $Bot_grid
-C 2001 pz -0.0001                                   $-14.0843     $Bot_fitting_end
-2002 pz 1.0                                                        $Bot_refl_end
-2003 pz 14.0                                                       $Top_refl_end
-2004 pz 15.0                                                    $Top_fitting_end
+2000 pz 0.0                                                            $Bot_grid
+2001 pz 1.0                                                        $Bot_refl_end
+2002 pz 14.0                                                       $Top_refl_end
+2003 pz 15.0                                                    $Top_fitting_end
 C
 C    Copy fuel pins
 C    - master pin surfaces copied
 C
 C  Bundle level
 C    Fuel bundle
-121 px 0                                                             $Pin_box_+x
-122 px -5.0                                                          $Pin_box_-x
-123 py 0                                                             $Pin_box_+y
-124 py -5.0                                                          $Pin_box_-y
-C 125 px 0.0001                                                  $Pin_box_dummy_+x
-C 126 px -5.0001                                                 $Pin_box_dummy_-x
-C 127 py 0.0001                                                  $Pin_box_dummy_+y
-C 128 py -5.0001                                                 $Pin_box_dummy_-y
-111 px 5.0                                                            $Bundle_+x
-112 px -5.0                                                           $Bundle_-x
-113 py 5.0                                                            $Bundle_+y
-114 py -5.0                                                           $Bundle_-y
-115 px 5.0001                                                   $Bundle_dummy_+x
-116 px -5.0001                                                  $Bundle_dummy_-x
-117 py 5.0001                                                   $Bundle_dummy_+y
-118 py -5.0001                                                  $Bundle_dummy_-y
-119 pz 40.0                                                     $Bundle_dummy_+z
-120 pz -10.0                                                    $Bundle_dummy_-z
+111 px -5.0                                                          $Pin_box_-x
+112 px 0                                                             $Pin_box_+x
+113 py -5.0                                                          $Pin_box_-y
+114 py 0                                                             $Pin_box_+y
+121 px -5.0                                                           $Bundle_-x
+122 px 5.0                                                            $Bundle_+x
+123 py -5.0                                                           $Bundle_-y
+124 py 5.0                                                            $Bundle_+y
+125 px -5.0001                                                  $Bundle_dummy_-x
+126 px 5.0001                                                   $Bundle_dummy_+x
+127 py -5.0001                                                  $Bundle_dummy_-y
+128 py 5.0001                                                   $Bundle_dummy_+y
 C    Bottom adapter
-201 px 3.0                                                           $Adapter_+x
-202 px -3.0                                                          $Adapter_-x
-203 py 3.0                                                           $Adapter_+y
-204 py -3.0                                                          $Adapter_-y
-205 pz -6.0                                                      $Adapter_bottom
+5001 px -3.0                                                         $Adapter_-x
+5002 px 3.0                                                          $Adapter_+x
+5003 py -3.0                                                         $Adapter_-y
+5004 py 3.0                                                          $Adapter_+y
+5005 pz -6.0                                                     $Adapter_bottom
 C    Reflector element
-3001 px 3.5                                                   $Refl_elem_meat_+x
-3002 px -3.5                                                  $Refl_elem_meat_-x
-3003 py 3.5                                                   $Refl_elem_meat_+y
-3004 py -3.5                                                  $Refl_elem_meat_-y
+3001 px -3.5                                                  $Refl_elem_meat_-x
+3002 px 3.5                                                   $Refl_elem_meat_+x
+3003 py -3.5                                                  $Refl_elem_meat_-y
+3004 py 3.5                                                   $Refl_elem_meat_+y
 3005 pz 1.5                                                   $Refl_elem_meat_-z
 3006 pz 14.5                                                  $Refl_elem_meat_+z
 3007 pz 16.0                                                      $Refl_elem_top
@@ -255,57 +248,56 @@ C    Transient rod
 4542 41 pz 0.0                                                           $TR_bot
 4543 41 pz 20.0                                                          $TR_top
 C    Control shroud
-4001 px 9.0                                                          $Shroud_++x
-4002 px 6.0                                                           $Shroud_+x
-4003 py 24.0                                                        $Shroud_+++y
-4004 py 11.0                                                         $Shroud_++y
-4005 py 9.0                                                           $Shroud_+y
-4006 py -4.0                                                          $Shroud_-y
+4001 px 6.0                                                           $Shroud_+x
+4002 px 9.0                                                          $Shroud_++x
+4003 py -4.0                                                          $Shroud_-y
+4004 py 9.0                                                           $Shroud_+y
+4005 py 11.0                                                         $Shroud_++y
+4006 py 24.0                                                        $Shroud_+++y
 4007 pz 22.0                                                         $Shroud_top
 C    Safety blades
 C    - Blades common
-4101 px 8.5                                                         $SB_meat_++x
-4102 px 6.5                                                          $SB_meat_+x
-4103 py 22.5                                                        $SB_meat_++y
-4104 py 12.5                                                         $SB_meat_+y
+4101 px 6.5                                                          $SB_meat_+x
+4102 px 8.5                                                         $SB_meat_++x
+4103 py 12.5                                                         $SB_meat_+y
+4104 py 22.5                                                        $SB_meat_++y
 C    - Blade 1
 4120 42 pz 0.0                                                     $SB1_meat_bot
 4121 42 pz 25.0                                                    $SB1_meat_top
 C    Regulating blade
-4201 px 8.0                                                        $RB_sheet_++x
-4202 px 7.0                                                         $RB_sheet_+x
-4203 py 6.5                                                         $RB_sheet_+y
-4204 py -1.5                                                        $RB_sheet_-y
+4201 px 7.0                                                         $RB_sheet_+x
+4202 px 8.0                                                        $RB_sheet_++x
+4203 py -1.5                                                        $RB_sheet_-y
+4204 py 6.5                                                         $RB_sheet_+y
 4205 43 pz 0.0                                                           $RB_bot
 4206 43 pz 28.0                                                          $RB_top
 C    Core region
-101 px 20.0                                                           $Core_+++x
-102 px 10.0                                                            $Core_++x
-103 px 5.0                                                              $Core_+x
-104 px -5.0                                                             $Core_-x
-107 py 25.0                                                             $Core_+y
-108 py -5.0                                                             $Core_-y
-11 px 20.0001                                                     $Core_dummy_+x
-12 px -5.0001                                                     $Core_dummy_-x
-13 py 25.0001                                                     $Core_dummy_+y
-14 py -5.0001                                                     $Core_dummy_-y
-15 pz 40.0001                                                     $Core_dummy_+z
-16 pz -10.0001                                                    $Core_dummy_-z
+131 px -5.0                                                             $Core_-x
+132 px 5.0                                                              $Core_+x
+133 px 10.0                                                            $Core_++x
+134 px 20.0                                                           $Core_+++x
+135 py -5.0                                                             $Core_-y
+136 py 25.0                                                             $Core_+y
+137 pz -10.0                                                    $Bundle_dummy_-z
+138 pz 40.0                                                     $Bundle_dummy_+z
+141 px -5.0001                                                    $Core_dummy_-x
+142 px 20.0001                                                    $Core_dummy_+x
+143 py -5.0001                                                    $Core_dummy_-y
+144 py 25.0001                                                    $Core_dummy_+y
 C    Core box
-501 px 20.5                                                         $Core_box_+x
-502 px -5.5                                                         $Core_box_-x
-503 py 25.5                                                         $Core_box_+y
-504 py -5.5                                                         $Core_box_-y
-c 505 pz 40                                                         $Core_box_+z
+501 px -5.5                                                         $Core_box_-x
+502 px 20.5                                                         $Core_box_+x
+503 py -5.5                                                         $Core_box_-y
+504 py 25.5                                                         $Core_box_+y
 C
 C  Reactor level
 C    Reactor pool
-301 px 25.0                                                         $West_box_+x
-302 px -20.0                                                        $West_box_-x
-303 py 30.0                                                         $West_box_+y
-304 py -10.0                                                        $West_box_-y
-305 pz 55.0                                                             $Pool_+z
-306 pz -15.0                                                            $Pool_-z
+301 px -20.0                                                        $West_box_-x
+302 px 25.0                                                         $West_box_+x
+303 py -10.0                                                        $West_box_-y
+304 py 30.0                                                         $West_box_+y
+305 pz -15.0                                                            $Pool_-z
+306 pz 55.0                                                             $Pool_+z
 C    Thermal column                 
 C    Beam ports                     
 C    - Ports common
