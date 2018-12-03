@@ -59,7 +59,7 @@ plane 2000 Zpl=1 Con=0
 plane 2002 Zpl=1 Con=-1
 plane 2003 Zpl=1 Con=-14
 plane 2004 Zpl=1 Con=-15
-cuboid 1 2 -2 2 -2 15  0
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190100 1 -1000 1001 1100 -1101
 media 1190101 1 -1000 1001 1101 -1102
 media 1190102 1 -1000 1001 1102 -1103
@@ -88,7 +88,7 @@ plane 2000 Zpl=1 Con=0
 plane 2002 Zpl=1 Con=-1
 plane 2003 Zpl=1 Con=-14
 plane 2004 Zpl=1 Con=-15
-cuboid 1 2 -2 2 -2 15  0
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190200  1 -1000 1001 1100 -1101
 media 1190201 1 -1000 1001 1101 -1102
 media 1190202 1 -1000 1001 1102 -1103
@@ -117,7 +117,7 @@ plane 2000 Zpl=1 Con=0
 plane 2002 Zpl=1 Con=-1
 plane 2003 Zpl=1 Con=-14
 plane 2004 Zpl=1 Con=-15
-cuboid 1 2 -2 2 -2 15  0
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190300  1 -1000 1001 1100 -1101
 media 1190301 1 -1000 1001 1101 -1102
 media 1190302 1 -1000 1001 1102 -1103
@@ -146,7 +146,7 @@ plane 2000 Zpl=1 Con=0
 plane 2002 Zpl=1 Con=-1
 plane 2003 Zpl=1 Con=-14
 plane 2004 Zpl=1 Con=-15
-cuboid 1 2 -2 2 -2 15  0
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190400  1 -1000 1001 1100 -1101
 media 1190401 1 -1000 1001 1101 -1102
 media 1190402 1 -1000 1001 1102 -1103
@@ -175,7 +175,7 @@ plane 2000 Zpl=1 Con=0
 plane 2002 Zpl=1 Con=-1
 plane 2003 Zpl=1 Con=-14
 plane 2004 Zpl=1 Con=-15
-cuboid 1 2 -2 2 -2 15  0
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190500  1 -1000 1001 1100 -1101
 media 1190501 1 -1000 1001 1101 -1102
 media 1190502 1 -1000 1001 1102 -1103
@@ -204,7 +204,7 @@ plane 2000 Zpl=1 Con=0
 plane 2002 Zpl=1 Con=-1
 plane 2003 Zpl=1 Con=-14
 plane 2004 Zpl=1 Con=-15
-cuboid 1 2 -2 2 -2 15  0
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190600  1 -1000 1001 1100 -1101
 media 1190601 1 -1000 1001 1101 -1102
 media 1190602 1 -1000 1001 1102 -1103
@@ -233,7 +233,7 @@ plane 2000 Zpl=1 Con=0
 plane 2002 Zpl=1 Con=-1
 plane 2003 Zpl=1 Con=-14
 plane 2004 Zpl=1 Con=-15
-cuboid 1 2 -2 2 -2 15  0
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190700  1 -1000 1001 1100 -1101
 media 1190701 1 -1000 1001 1101 -1102
 media 1190702 1 -1000 1001 1102 -1103
@@ -251,8 +251,8 @@ media 30000 1 2004
 boundary 1
 unit 13100
 com="Fuel pin lattice"
-cuboid 1 4 -4 4 -4 15 0
-array 1 1 place  1 1 1 -2 -2 0
+cuboid 1 5 -5 5 -5 15 0
+array 1 1 place  1 1 1 -2.5 -2.5 0
 boundary 1
 unit 31
 com="fuel bundle Row:3 Column:1"
@@ -292,11 +292,11 @@ media 50001 1 4541
 boundary 4541
 unit 12200
 com="fuel pin lattice 2"
-cuboid 1 4 -4 4 -4 40 0 
-hole 2203 origin x=-2 y=-2 z=0
-hole 2202 origin x=-2 y=2 z=0
-hole 2204 origin x=2 y=-2 z=0
-hole 3101 origin x=2 y=2 z=10
+cuboid 1 5 -5 5 -5 40 0 
+hole 2203 origin x=-2.5 y=-2.5 z=0
+hole 2202 origin x=-2.5 y=2.5 z=0
+hole 2204 origin x=2.5 y=-2.5 z=0
+hole 3101 origin x=2.5 y=2.5 z=10
 media 30000 1 1
 boundary 1
 unit 22 
