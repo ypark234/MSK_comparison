@@ -7,6 +7,7 @@ End Param
 Read Composition  
 graphite 50002  DEN=2.23   end
 graphite 50001  DEN=2.23   end
+B-10   40001   0 0.001007273004426626  end 
 U-238 1170801  0 0.001007273004426626  end 
 U-235 1190100  0 0.0002505920710611547  end 
 U-235 1190101  0 0.0002505920710611547  end 
@@ -288,7 +289,7 @@ com="Transient rod"
 cylinder 4541 1.8 20 0
 plane 4542 zpl=1 con=0 
 plane 4543 zpl=1 con=20.0 
-media 50001 1 4541
+media 40001 1 4541
 boundary 4541
 unit 12200
 com="fuel pin lattice 2"
@@ -308,19 +309,27 @@ media 30000 1 1
 boundary 1 
 unit 3000
 com="reflector element"
-plane 3001 xpl=1 con=-4
-plane 3002 xpl=1 con=4
-plane 3003 ypl=1 con=-4
-plane 3004 ypl=1 con= 4
-plane 3005 zpl=1 con=-1
-plane 3006 zpl=1 con=-19
-cuboid 1 4 -4 4 -4 19 1
-media 30001 1 -3001 3002 -3003 3004 3005 -3006
+plane 3001 xpl=1 con=3.5
+plane 3002 xpl=1 con=-3.5
+plane 3003 ypl=1 con=3.5
+plane 3004 ypl=1 con= -3.5
+plane 3005 zpl=1 con=-1.5
+plane 3006 zpl=1 con=-14.5
+plane 3007 zpl=1 con=-16
+cuboid 1 5 -5 5 -5 16 1.5
+media 30001 1 3001 -3002 3003 -3004 3005 -3006
+media 50001 1 -3007 3006
+media 50001 1 -3005 1
+media 50001 1 3004 3001 -3002 -3006
+media 50001 1 -3003 3001 -3002 -3006
+media 50001 1 3002  -3006
+media 50001 1 -3001   -3006 1
+media 30000 1 3007
 boundary 1
 unit 300
 com="reflector bundle"
 cuboid 1 5.0 -5.0 5.0 -5.0 40 -10
-hole 3000 origin x=0 y=0 z=-1
+hole 3000 origin x=0 y=0 z=-1.5
 hole 20000 origin x=0 y=0 z=-6
 media 30000 1 1
 boundary 1
@@ -384,7 +393,7 @@ com="core 2"
 cuboid 1 10 0 30 0 40 -10
 hole 22 origin x=5 y=5
 hole 300 origin x=5  y=15
-media 30000 1 1 
+media 30000 1 1
 boundary 1
 unit 100
 com="entire core"
