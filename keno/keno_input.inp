@@ -57,23 +57,23 @@ plane 1101 Zpl=1 Con=-6
 plane 1102 Zpl=1 Con=-9
 plane 1103 Zpl=1 Con=-12
 plane 2000 Zpl=1 Con=0
-plane 2002 Zpl=1 Con=-1
-plane 2003 Zpl=1 Con=-14
-plane 2004 Zpl=1 Con=-15
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
 cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190100 1 -1000 1001 1100 -1101
 media 1190101 1 -1000 1001 1101 -1102
 media 1190102 1 -1000 1001 1102 -1103
 media 1190199 1 -1001 1002 1100 -1103
-media 50002 1 1002 2003 -2004
-media 50002 1 -1001 1002 1103 -2003
-media 30001 1 1001 1103 -2003
+media 50002 1 1002 2002 -2003
+media 50002 1 -1001 1002 1103 -2002
+media 30001 1 1001 1103 -2002
 media 20000 1 1000 1100 -1103
-media 30001 1 1001 2002 -1100
-media 50002 1 -1001 1002 2002 -1100
-media 50002 1  1002 2000 -2002
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
 media 30000 1 -1002 1
-media 30000  1 -2000 1
+media 30000 1 -2000 1
 media 30000 1 2004
 boundary 1
 unit 3103
@@ -86,23 +86,23 @@ plane 1101 Zpl=1 Con=-6
 plane 1102 Zpl=1 Con=-9
 plane 1103 Zpl=1 Con=-12
 plane 2000 Zpl=1 Con=0
-plane 2002 Zpl=1 Con=-1
-plane 2003 Zpl=1 Con=-14
-plane 2004 Zpl=1 Con=-15
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
 cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190200  1 -1000 1001 1100 -1101
 media 1190201 1 -1000 1001 1101 -1102
 media 1190202 1 -1000 1001 1102 -1103
 media 1190299 1 -1001 1002 1100 -1103
-media 50002 1 1002 2003 -2004
-media 50002 1 -1001 1002 1103 -2003
-media 30001 1 1001 1103 -2003
+media 50002 1 1002 2002 -2003
+media 50002 1 -1001 1002 1103 -2002
+media 30001 1 1001 1103 -2002
 media 20000 1 1000 1100 -1103
-media 30001 1 1001 2002 -1100
-media 50002 1 -1001 1002 2002 -1100
-media 50002 1  1002 2000 -2002
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
 media 30000 1 -1002 1
-media 30000  1 -2000 1
+media 30000 1 -2000 1
 media 30000 1 2004
 boundary 1
 unit 3104
@@ -115,23 +115,23 @@ plane 1101 Zpl=1 Con=-6
 plane 1102 Zpl=1 Con=-9
 plane 1103 Zpl=1 Con=-12
 plane 2000 Zpl=1 Con=0
-plane 2002 Zpl=1 Con=-1
-plane 2003 Zpl=1 Con=-14
-plane 2004 Zpl=1 Con=-15
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
 cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190300  1 -1000 1001 1100 -1101
 media 1190301 1 -1000 1001 1101 -1102
 media 1190302 1 -1000 1001 1102 -1103
 media 1190399 1 -1001 1002 1100 -1103
-media 50002 1 1002 2003 -2004
-media 50002 1 -1001 1002 1103 -2003
-media 30001 1 1001 1103 -2003
+media 50002 1 1002 2002 -2003
+media 50002 1 -1001 1002 1103 -2002
+media 30001 1 1001 1103 -2002
 media 20000 1 1000 1100 -1103
-media 30001 1 1001 2002 -1100
-media 50002 1 -1001 1002 2002 -1100
-media 50002 1  1002 2000 -2002
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
 media 30000 1 -1002 1
-media 30000  1 -2000 1
+media 30000 1 -2000 1
 media 30000 1 2004
 boundary 1
 unit 2201
@@ -144,23 +144,23 @@ plane 1101 Zpl=1 Con=-6
 plane 1102 Zpl=1 Con=-9
 plane 1103 Zpl=1 Con=-12
 plane 2000 Zpl=1 Con=0
-plane 2002 Zpl=1 Con=-1
-plane 2003 Zpl=1 Con=-14
-plane 2004 Zpl=1 Con=-15
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
 cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190400  1 -1000 1001 1100 -1101
 media 1190401 1 -1000 1001 1101 -1102
 media 1190402 1 -1000 1001 1102 -1103
 media 1190499 1 -1001 1002 1100 -1103
-media 50002 1 1002 2003 -2004
-media 50002 1 -1001 1002 1103 -2003
-media 30001 1 1001 1103 -2003
+media 50002 1 1002 2002 -2003
+media 50002 1 -1001 1002 1103 -2002
+media 30001 1 1001 1103 -2002
 media 20000 1 1000 1100 -1103
-media 30001 1 1001 2002 -1100
-media 50002 1 -1001 1002 2002 -1100
-media 50002 1  1002 2000 -2002
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
 media 30000 1 -1002 1
-media 30000  1 -2000 1
+media 30000 1 -2000 1
 media 30000 1 2004
 boundary 1
 unit 2202
@@ -173,23 +173,23 @@ plane 1101 Zpl=1 Con=-6
 plane 1102 Zpl=1 Con=-9
 plane 1103 Zpl=1 Con=-12
 plane 2000 Zpl=1 Con=0
-plane 2002 Zpl=1 Con=-1
-plane 2003 Zpl=1 Con=-14
-plane 2004 Zpl=1 Con=-15
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
 cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190500  1 -1000 1001 1100 -1101
 media 1190501 1 -1000 1001 1101 -1102
 media 1190502 1 -1000 1001 1102 -1103
 media 1190599 1 -1001 1002 1100 -1103
-media 50002 1 1002 2003 -2004
-media 50002 1 -1001 1002 1103 -2003
-media 30001 1 1001 1103 -2003
+media 50002 1 1002 2002 -2003
+media 50002 1 -1001 1002 1103 -2002
+media 30001 1 1001 1103 -2002
 media 20000 1 1000 1100 -1103
-media 30001 1 1001 2002 -1100
-media 50002 1 -1001 1002 2002 -1100
-media 50002 1  1002 2000 -2002
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
 media 30000 1 -1002 1
-media 30000  1 -2000 1
+media 30000 1 -2000 1
 media 30000 1 2004
 boundary 1
 unit 2203
@@ -202,23 +202,23 @@ plane 1101 Zpl=1 Con=-6
 plane 1102 Zpl=1 Con=-9
 plane 1103 Zpl=1 Con=-12
 plane 2000 Zpl=1 Con=0
-plane 2002 Zpl=1 Con=-1
-plane 2003 Zpl=1 Con=-14
-plane 2004 Zpl=1 Con=-15
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
 cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190600  1 -1000 1001 1100 -1101
 media 1190601 1 -1000 1001 1101 -1102
 media 1190602 1 -1000 1001 1102 -1103
 media 1190599 1 -1001 1002 1100 -1103
-media 50002 1 1002 2003 -2004
-media 50002 1 -1001 1002 1103 -2003
-media 30001 1 1001 1103 -2003
+media 50002 1 1002 2002 -2003
+media 50002 1 -1001 1002 1103 -2002
+media 30001 1 1001 1103 -2002
 media 20000 1 1000 1100 -1103
-media 30001 1 1001 2002 -1100
-media 50002 1 -1001 1002 2002 -1100
-media 50002 1  1002 2000 -2002
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
 media 30000 1 -1002 1
-media 30000  1 -2000 1
+media 30000 1 -2000 1
 media 30000 1 2004
 boundary 1
 unit 2204
@@ -231,66 +231,25 @@ plane 1101 Zpl=1 Con=-6
 plane 1102 Zpl=1 Con=-9
 plane 1103 Zpl=1 Con=-12
 plane 2000 Zpl=1 Con=0
-plane 2002 Zpl=1 Con=-1
-plane 2003 Zpl=1 Con=-14
-plane 2004 Zpl=1 Con=-15
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
 cuboid 1 2.5 -2.5 2.5 -2.5 15  0
 media 1190700  1 -1000 1001 1100 -1101
 media 1190701 1 -1000 1001 1101 -1102
 media 1190702 1 -1000 1001 1102 -1103
 media 1190799 1 -1001 1002 1100 -1103
-media 50002 1 1002 2003 -2004
-media 50002 1 -1001 1002 1103 -2003
-media 30001 1 1001 1103 -2003
+media 50002 1 1002 2002 -2003
+media 50002 1 -1001 1002 1103 -2002
+media 30001 1 1001 1103 -2002
 media 20000 1 1000 1100 -1103
-media 30001 1 1001 2002 -1100
-media 50002 1 -1001 1002 2002 -1100
-media 50002 1  1002 2000 -2002
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
 media 30000 1 -1002 1
-media 30000  1 -2000 1
+media 30000 1 -2000 1
 media 30000 1 2004
 boundary 1
-unit 12200 
-com="Fuel pin lattice"
-cuboid 1 5 -5 5 -5 15 0
-array 1 1 place  1 1 1 -2.5 -2.5 0
-boundary 1
-unit 31
-com="fuel bundle Row:3 Column:1"
-plane 115 xpl=1 con=-5.0
-plane 116 xpl=1 con=5.0
-plane 117 ypl=1 con=-5.0
-plane 118 ypl=1 con=5.0
-plane 2000 zpl=1 con=0.0
-cuboid 1 5.0 -5.0 5.0 -5.0 40 -10
-hole 13100 origin x=0 y=0 z=0
-hole 20000  origin x=0 y=0 z=-6
-media 30000 1 1
-boundary 1
-unit 20000
-com="Bottom adapter"
-plane 201 xpl=1 con=-3
-plane 202 xpl=1 con=3
-plane 203 ypl=1 con=-3
-plane 204 ypl=1 con=3
-plane 205 zpl=1 con=-6
-plane 2000 zpl=1 con=0
-cuboid 1 3 -3 3 -3 6 0
-media 50001 1 -201 202 -203 204 -205 2000
-media 30000 1 201
-media 30000 1 -202 1 
-media 30000 1 203
-media 30000 1 -204 1
-media 30000 1 205  
-media 30000 1 -2000 1
-boundary 1
-unit 3101
-com="Transient rod"
-cylinder 4541 1.8 20 0
-plane 4542 zpl=1 con=0 
-plane 4543 zpl=1 con=20.0 
-media 40001 1 4541
-boundary 4541
 unit 13100
 com="fuel pin lattice 2"
 cuboid 1 5 -5 5 -5 40 0 
@@ -300,13 +259,42 @@ hole 3104 origin x=2.5 y=-2.5 z=0
 hole 3101 origin x=2.5 y=2.5 z=10
 media 30000 1 1
 boundary 1
+unit 12200 
+com="Fuel pin lattice"
+cuboid 1 5 -5 5 -5 15 0
+array 1 1 place  1 1 1 -2.5 -2.5 0
+boundary 1
+unit 20000
+com="Bottom adapter"
+plane 5001 xpl=1 con=3
+plane 5002 xpl=1 con=-3
+plane 5003 ypl=1 con=3
+plane 5004 ypl=1 con=-3
+plane 5005 zpl=1 con=-6
+plane 2000 zpl=1 con=0
+cuboid 1 3 -3 3 -3 6 0
+media 50001 1 5001 -5002 5003 -5004 -5005 2000
+media 30000 1 -5001 1
+media 30000 1 5002
+media 30000 1 -5003 1
+media 30000 1 5004
+media 30000 1 5005  
+media 30000 1 -2000 1
+boundary 1
+unit 31
+com="fuel bundle Row:3 Column:1"
+cuboid 1 5.0 -5.0 5.0 -5.0 40 -10
+hole 13100 origin x=0 y=0 z=0
+hole 20000 origin x=0 y=0 z=-6
+media 30000 1 1
+boundary 1
 unit 22 
 com="fuel bundle,Row:2 Column:2"
 cuboid 1 5.0 -5.0 5.0 -5.0 40 -10
 hole 12200 origin x=0 y=0 z=0
 hole 20000 origin x=0 y=0 z=-6
 media 30000 1 1
-boundary 1 
+boundary 1
 unit 3000
 com="reflector element"
 plane 3001 xpl=1 con=3.5
@@ -335,53 +323,58 @@ media 30000 1 1
 boundary 1
 unit 401
 com="shroud"
-plane 4001 xpl=1 con=-9.0
-plane 4002 xpl=1 con=-6
-plane 4003 ypl=1 con=-24
-plane 4006 ypl=1 con=4
-plane 4004 ypl=1 con=-11
-plane 4005 ypl=1 con=-9
+plane 4001 xpl=1 con=-6
+plane 4002 xpl=1 con=-9
+plane 4003 ypl=1 con=4
+plane 4004 ypl=1 con=-9
+plane 4005 ypl=1 con=-11
+plane 4006 ypl=1 con=-24
 plane 4007 zpl=1 con=-22
 plane 2000 zpl=1 con=0
-plane 107 ypl=1 con=-25
-plane 124 ypl=1 con=5
-plane 102 xpl=1 con=-10
-plane 111 xpl=1 con=-5
+plane 132 xpl=1 con=-5
+plane 133 xpl=1 con=-10
+plane 135 ypl=1 con=5
+plane 136 ypl=1 con=-25
 cuboid 1 10 5 25 -5 40 -10
-media 50001 1  4003 -107 -4007 2000
-media 50001 1 -4006 124 -4007 2000
-media 50001 1 -4003 4006 4001 -102 -4007 2000
-media 50001 1 -4003 4006 -4002 111 -4007 2000
-media 50001 1 -4004 4005 4002 -4001 -4007 2000 
-media 30000 1 -4001 4002 -4003 4004 2000 -4007
-media 30000 1 -4001 4002 -4005 4006 2000 -4007
-media 30000 1 -2000 1 
-media 30000 1  4007 
+media 50001 1 4006 -136 -4007 2000
+media 50001 1 135 -4003 -4007 2000
+media 50001 1 4002 -133 4003 -4006 -4007 2000
+media 50001 1 4003 -4006 132 -4001 -4007 2000
+media 50001 1 4004 -4005 4001 -4002 -4007 2000 
+media 30000 1 4001 -4002 4005 -4006 -4007 2000
+media 30000 1 4001 -4002 4003 -4004 -4007 2000
+media 30000 1 -2000 1
+media 30000 1 4007 
 hole 411 origin x=0 y=0 z= 14.5 
 hole 412 origin x=0 y=0 z= 7.5
 boundary 1
+unit 3101
+com="Transient rod"
+cylinder 4541 1.8 20 0
+media 40001 1 4541
+boundary 4541
 unit 411 
 com="safety blades"
-plane 4101 xpl=1 con=-8.5
-plane 4102 xpl=1 con=-6.5
-plane 4103 ypl=1 con=-22.5
-plane 4104 ypl=1 con=-12.5
+plane 4101 xpl=1 con=-6.5
+plane 4102 xpl=1 con=-8.5
+plane 4103 ypl=1 con=-12.5
+plane 4104 ypl=1 con=-22.5
 plane 4120 ypl=1 con=0
 plane 4121 zpl=1 con=-25
 cuboid 1 8.5 6.5 22.5 12.5 25 0 
-media 40002 1 -4101 4102 -4103 4104 4120 -4121
-boundary 1 
+media 40002 1 4101 -4102 4103 -4104 4120 -4121
+boundary 1
 unit 412
 com="Regulating blade"
-plane 4201 xpl=1 con=-8
-plane 4202 xpl=1 con=-7
-plane 4203 ypl=1 con=-6.5
-plane 4204 ypl=1 con=1.5
+plane 4201 xpl=1 con=-7
+plane 4202 xpl=1 con=-8
+plane 4203 ypl=1 con=1.5
+plane 4204 ypl=1 con=-6.5
 plane 4205 zpl=1 con=0
 plane 4206 zpl=1 con=-28
 cuboid 1 8 7 6.5 -1.5 28 0
-media 50002 1 -4201 4202 -4203 4204 4205 -4206
-boundary 1 
+media 50002 1 4201 -4202 4203 -4204 4205 -4206
+boundary 1
 unit 101
 com="core 1"
 cuboid 1 10 0 30 0 40 -10
@@ -392,30 +385,30 @@ unit 102
 com="core 2"
 cuboid 1 10 0 30 0 40 -10
 hole 31 origin x=5 y=5
-hole 300 origin x=5  y=15
+hole 300 origin x=5 y=15
 media 30000 1 1
 boundary 1
 unit 100
 com="entire core"
-plane 101 xpl=1 con=-20
-plane 104 xpl=1 con=5
-plane 107 ypl=1 con=-25
-plane 108 ypl=1 con=5
-plane 119 zpl=1 con=-40
-plane 120 zpl=1 con=10
-plane 501 xpl=1 con=-20.5
-plane 502 xpl=1 con=5.5
-plane 503 ypl=1 con=-25.5
-plane 504 ypl=1 con=5.5
+plane 131 xpl=1 con=5
+plane 134 xpl=1 con=-20
+plane 135 ypl=1 con=5
+plane 136 ypl=1 con=-25
+plane 137 zpl=1 con=10
+plane 138 zpl=1 con=-40
+plane 501 xpl=1 con=5.5
+plane 502 xpl=1 con=-20.5
+plane 503 ypl=1 con=5.5
+plane 504 ypl=1 con=-25.5
 cuboid 1 20.5 -5.5 25.5 -5.5 40 -10
 hole 101 origin x=10 y=-5
 hole 102 origin x=-5 y=-5
 hole 401 origin x=0 y=0
-media 30000 1 -101 104 -107 108 -119 120
-media 50001 1 -503 107 104 -101 -119 120
-media 50001 1 -108 504 104 -101 -119 120
-media 50001 1 101 -501 -503 504 -119 120
-media 50001 1 -104 502 -503 504 -119 120
+media 30000 1 131 -134 135 -136 137 -138
+media 50001 1 131 -134 136 -504 137 -138
+media 50001 1 131 -134 503 -135 137 -138
+media 50001 1 134 -502 503 -504 137 -138
+media 50001 1 501 -131 503 -504 137 -138
 boundary 1
 global unit 1
 com="bounding universe"
