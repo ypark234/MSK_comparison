@@ -43,7 +43,7 @@ C      Non-active region
 2310297 50002 -8.0 1001 -1002 2001 -1100 vol=10.9956 u=3102       $Bot_refl_clad
         imp:n=1                                                   $Bot_refl_clad
 2310298 50002 -8.0 -1002 2000 -2001 vol=12.5664 u=3102 imp:n=1  $Bot_end_fitting
-2310299 30000 -0.998207 (1002:-2000:2003) u=3102 imp:n=1         $External_water
+2310299 30000 -1.0 (1002:-2000:2003) u=3102 imp:n=1              $External_water
 C    Copy fuel pins
 C    Row:3 Column:1 Pin:3
 1310300 like 1310200 but u=3103 mat=1190200                          $Fuel_R1_A1
@@ -138,38 +138,38 @@ C    Row:2 Column:2
 12202  0 125 -126 127 -128 -2000 fill=20000 u=22 imp:n=1      $Adapter_container
 C    Bottom adapter
 50000 50001 -2.7 5001 -5002 5003 -5004 5005 -2000 u=20000 imp:n=1       $Adapter
-50001 30000 -0.998207 (-5001:5002:-5003:5004:-5005:2000) u=20000      $Ext_water
+50001 30000 -1.0 (-5001:5002:-5003:5004:-5005:2000) u=20000           $Ext_water
          imp:n=1                                                      $Ext_water
 C    Reflector element
 30001 30001 -1.7 3001 -3002 3003 -3004 3005 -3006 u=30000        $Refl_elem_meat
          imp:n=1                                                 $Refl_elem_meat
 30002 50001 -2.7 (-3001:3002:-3003:3004:-3005:3006) -3007        $Refl_elem_Clad
          u=30000 imp:n=1                                         $Refl_elem_Clad
-30003 30000 -0.998207 3007 u=30000 imp:n=1                            $Ext_water
+30003 30000 -1.0 3007 u=30000 imp:n=1                                 $Ext_water
 30101  0 125 -126 127 -128 2000 fill=30000 u=300 imp:n=1    $Refl_elem_container
 30102  0 125 -126 127 -128 -2000 fill=20000 u=300 imp:n=1     $Adapter_container
 C
 C  Core level
 C    Transient rod - Row:5 Column:4 Pin:1
 4310101 40001 -2.52 -4541 4542 -4543 u=3101 imp:n=1                     $TR_meat
-4310102 30000 -0.998207 (4541:-4542:4543) u=3101 imp:n=1              $Ext_water
+4310102 30000 -1.0 (4541:-4542:4543) u=3101 imp:n=1                   $Ext_water
 C    Control shroud
 40001 50001 -2.7 ((-4001:4002:-4003:4006):(4004 -4005)) -4007 2000       $Shroud
          u=401 imp:n=1                                                   $Shroud
-40002 30000 -0.998207 4001 -4002 4005 -4006 2000 fill=411 u=401       $East_Room
+40002 30000 -1.0 4001 -4002 4005 -4006 2000 fill=411 u=401            $East_Room
          imp:n=1                                                      $East_Room
-40003 30000 -0.998207 4001 -4002 4003 -4004 2000 fill=412 u=401       $West_Room
+40003 30000 -1.0 4001 -4002 4003 -4004 2000 fill=412 u=401            $West_Room
          imp:n=1                                                      $West_Room
-40004 30000 -0.998207 (-2000:(4007 ((-4001:4002:-4003:4006):(4004     $Ext_Water
+40004 30000 -1.0 (-2000:(4007 ((-4001:4002:-4003:4006):(4004          $Ext_Water
         -4005)))) u=401 imp:n=1                                       $Ext_Water
 C    Safety blade - East
 40101 40002 -2.53 4101 -4102 4103 -4104 4120 -4121 u=411 imp:n=1        $SB_meat
-40102 30000 -0.998207 (-4101:4102:-4103:4104:-4120:4121) u=411 imp:n=1  $Ext_Wtr
+40102 30000 -1.0 (-4101:4102:-4103:4104:-4120:4121) u=411 imp:n=1       $Ext_Wtr
 C    Regulating blade - West
 40201 50002 -8.0 4201 -4202 4203 -4204 4205 -4206 u=412 imp:n=1        $RB_sheet
-40204 30000 -0.998207 (-4201:4202:-4203:4204:-4205:4206) u=412 imp:n=1  $Ext_Wtr
+40204 30000 -1.0 (-4201:4202:-4203:4204:-4205:4206) u=412 imp:n=1       $Ext_Wtr
 C    Core lattice
-10100 30000 -0.998207 501 -502 503 -504 305 -306 u=100 imp:n=1
+10100 30000 -1.0 501 -502 503 -504 305 -306 u=100 imp:n=1
 10101 0 121 -122 123 -124 u=101 lat=1 imp:n=1
         fill=0:0 -2:0 0:0
         100
@@ -182,14 +182,14 @@ C    Core lattice
         100
 C    Core region
 101  0 141 -132 143 -144 fill=101 u=10 imp:n=1                    $Core_region_1
-102 30000 -0.998207 132 -133 143 -144 fill=401 u=10 imp:n=1    $Control_region_1
+102 30000 -1.0 132 -133 143 -144 fill=401 u=10 imp:n=1         $Control_region_1
 103  0 133 -142 143 -144 fill=102 u=10 imp:n=1                    $Core_region_2
 100  0 131 -134 135 -136 137 -138 fill=10 imp:n=1                   $Entire_core
 500 50001 -2.7 (-131:134:-135:136) 501 -502 503 -504 137 -138 imp:n=1  $Core_box
 C
 C  Reactor level
 C    Reactor pool
-300 30000 -0.998207 (-501:502:-503:504:-137:138) 301 -302 303 -304   $Pool_water
+300 30000 -1.0 (-501:502:-503:504:-137:138) 301 -302 303 -304        $Pool_water
      305 -306 imp:n=1                                                $Pool_water
 C    External universe
 999  0 (-301:302:-303:304:-305:306) imp:n=0                   $External_universe
@@ -365,8 +365,8 @@ mt30000    h-h2o.80t
 m30001     6012.00c  -1.0000e+00               $Carbon, Graphite (reactor grade)
 mt30001    grph10.80t
 m40001     5011.00c  -1.0000e+00                                  $Boron Carbide
-m40002     5011.00c  -3.5000e-01                         $Boral (65% Al-35% B4C)
-           13027.00c -6.5000e-01
+m40002     5011.00c  -2.8978838659219774e-01             $Boral (65% Al-35% B4C)
+           13027.00c -7.102116134078023e-01
 m50001     13027.00c -1.0000e+00                         $Aluminum, alloy 6061-O
 m50002     26056.00c -1.0000e+00                           $Steel, Stainless 304
 C
