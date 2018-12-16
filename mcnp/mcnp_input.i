@@ -308,47 +308,47 @@ C    Concrete shield
 C  -------------------------------  DATA CARD  ------------------------------  C
 C  MATERIAL
 C    Fuel region
-m1190100   92235.00c -1.0000e+00                            $Fuel, 11901, Bottom
-m1190101   92235.00c -1.0000e+00                            $Fuel, 11901, Middle
-m1190102   92235.00c -1.0000e+00                               $Fuel, 11901, Top
-m1190199   26056.00c -1.0000e+00                           $Steel, Stainless 304
-m1190200   92235.00c -1.0000e+00                            $Fuel, 11902, Bottom
-m1190201   92235.00c -1.0000e+00                            $Fuel, 11902, Middle
-m1190202   92235.00c -1.0000e+00                               $Fuel, 11902, Top
-m1190299   26056.00c -1.0000e+00                           $Steel, Stainless 304
-m1190300   92235.00c -1.0000e+00                            $Fuel, 11903, Bottom
-m1190301   92235.00c -1.0000e+00                            $Fuel, 11903, Middle
-m1190302   92235.00c -1.0000e+00                               $Fuel, 11903, Top
-m1190399   26056.00c -1.0000e+00                           $Steel, Stainless 304
-m1190400   92235.00c -1.0000e+00                            $Fuel, 11904, Bottom
-m1190401   92235.00c -1.0000e+00                            $Fuel, 11904, Middle
-m1190402   92235.00c -1.0000e+00                               $Fuel, 11904, Top
-m1190499   26056.00c -1.0000e+00                           $Steel, Stainless 304
-m1190500   92235.00c -1.0000e+00                            $Fuel, 11905, Bottom
-m1190501   92235.00c -1.0000e+00                            $Fuel, 11905, Middle
-m1190502   92235.00c -1.0000e+00                               $Fuel, 11905, Top
-m1190599   26056.00c -1.0000e+00                           $Steel, Stainless 304
-m1190600   92235.00c -1.0000e+00                            $Fuel, 11906, Bottom
-m1190601   92235.00c -1.0000e+00                            $Fuel, 11906, Middle
-m1190602   92235.00c -1.0000e+00                               $Fuel, 11906, Top
-m1190699   26056.00c -1.0000e+00                           $Steel, Stainless 304
-m1190700   92235.00c -1.0000e+00                            $Fuel, 11907, Bottom
-m1190701   92235.00c -1.0000e+00                            $Fuel, 11907, Middle
-m1190702   92235.00c -1.0000e+00                               $Fuel, 11907, Top
-m1190799   26056.00c -1.0000e+00                           $Steel, Stainless 304
+m1190100   92235.80c -1.0000e+00                            $Fuel, 11901, Bottom
+m1190101   92235.80c -1.0000e+00                            $Fuel, 11901, Middle
+m1190102   92235.80c -1.0000e+00                               $Fuel, 11901, Top
+m1190199   26056.80c -1.0000e+00                           $Steel, Stainless 304
+m1190200   92235.80c -1.0000e+00                            $Fuel, 11902, Bottom
+m1190201   92235.80c -1.0000e+00                            $Fuel, 11902, Middle
+m1190202   92235.80c -1.0000e+00                               $Fuel, 11902, Top
+m1190299   26056.80c -1.0000e+00                           $Steel, Stainless 304
+m1190300   92235.80c -1.0000e+00                            $Fuel, 11903, Bottom
+m1190301   92235.80c -1.0000e+00                            $Fuel, 11903, Middle
+m1190302   92235.80c -1.0000e+00                               $Fuel, 11903, Top
+m1190399   26056.80c -1.0000e+00                           $Steel, Stainless 304
+m1190400   92235.80c -1.0000e+00                            $Fuel, 11904, Bottom
+m1190401   92235.80c -1.0000e+00                            $Fuel, 11904, Middle
+m1190402   92235.80c -1.0000e+00                               $Fuel, 11904, Top
+m1190499   26056.80c -1.0000e+00                           $Steel, Stainless 304
+m1190500   92235.80c -1.0000e+00                            $Fuel, 11905, Bottom
+m1190501   92235.80c -1.0000e+00                            $Fuel, 11905, Middle
+m1190502   92235.80c -1.0000e+00                               $Fuel, 11905, Top
+m1190599   26056.80c -1.0000e+00                           $Steel, Stainless 304
+m1190600   92235.80c -1.0000e+00                            $Fuel, 11906, Bottom
+m1190601   92235.80c -1.0000e+00                            $Fuel, 11906, Middle
+m1190602   92235.80c -1.0000e+00                               $Fuel, 11906, Top
+m1190699   26056.80c -1.0000e+00                           $Steel, Stainless 304
+m1190700   92235.80c -1.0000e+00                            $Fuel, 11907, Bottom
+m1190701   92235.80c -1.0000e+00                            $Fuel, 11907, Middle
+m1190702   92235.80c -1.0000e+00                               $Fuel, 11907, Top
+m1190799   26056.80c -1.0000e+00                           $Steel, Stainless 304
 C
 C    General materials
-m20000     40092.00c -1.0000e+00                                      $Zirconium
-m30000     1001.00c  -1.1191487328808077e-01                      $Water, Liquid
-           8016.00c  -8.880851267119192e-01
-mt30000    h-h2o.80t
-m30001     6012.00c  -1.0000e+00               $Carbon, Graphite (reactor grade)
-mt30001    grph10.80t
-m40001     5011.00c  -1.0000e+00                                  $Boron Carbide
-m40002     5011.00c  -2.8978838659219774e-01             $Boral (65% Al-35% B4C)
-           13027.00c -7.102116134078023e-01
-m50001     13027.00c -1.0000e+00                         $Aluminum, alloy 6061-O
-m50002     26056.00c -1.0000e+00                           $Steel, Stainless 304
+m20000     40092.80c -1.0000e+00                                      $Zirconium
+m30000     1001.80c  -1.1191487328808077e-01                      $Water, Liquid
+           8016.80c  -8.880851267119192e-01
+mt30000    lwtr.20t
+m30001     6000.80c  -1.0000e+00               $Carbon, Graphite (reactor grade)
+mt30001    grph.20t
+m40001     5011.80c  -1.0000e+00                                  $Boron Carbide
+m40002     5011.80c  -2.8978838659219774e-01             $Boral (65% Al-35% B4C)
+           13027.80c -7.102116134078023e-01
+m50001     13027.80c -1.0000e+00                         $Aluminum, alloy 6061-O
+m50002     26056.80c -1.0000e+00                           $Steel, Stainless 304
 C
 mode n                                                             $Problem_type
 C
