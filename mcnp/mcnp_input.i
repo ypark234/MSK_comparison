@@ -309,58 +309,38 @@ C  -------------------------------  DATA CARD  ------------------------------  C
 C  MATERIAL
 C    Fuel region
 m1190100   92235.00c -1.0000e+00                            $Fuel, 11901, Bottom
-mt1190100  zr-zrh.80t h-zrh.80t
 m1190101   92235.00c -1.0000e+00                            $Fuel, 11901, Middle
-mt1190101  zr-zrh.80t h-zrh.80t
 m1190102   92235.00c -1.0000e+00                               $Fuel, 11901, Top
-mt1190102  zr-zrh.80t h-zrh.80t
 m1190199   26056.00c -1.0000e+00                           $Steel, Stainless 304
 m1190200   92235.00c -1.0000e+00                            $Fuel, 11902, Bottom
-mt1190200  zr-zrh.80t h-zrh.80t
 m1190201   92235.00c -1.0000e+00                            $Fuel, 11902, Middle
-mt1190201  zr-zrh.80t h-zrh.80t
 m1190202   92235.00c -1.0000e+00                               $Fuel, 11902, Top
-mt1190202  zr-zrh.80t h-zrh.80t
 m1190299   26056.00c -1.0000e+00                           $Steel, Stainless 304
 m1190300   92235.00c -1.0000e+00                            $Fuel, 11903, Bottom
-mt1190300  zr-zrh.80t h-zrh.80t
 m1190301   92235.00c -1.0000e+00                            $Fuel, 11903, Middle
-mt1190301  zr-zrh.80t h-zrh.80t
 m1190302   92235.00c -1.0000e+00                               $Fuel, 11903, Top
-mt1190302  zr-zrh.80t h-zrh.80t
 m1190399   26056.00c -1.0000e+00                           $Steel, Stainless 304
 m1190400   92235.00c -1.0000e+00                            $Fuel, 11904, Bottom
-mt1190400  zr-zrh.80t h-zrh.80t
 m1190401   92235.00c -1.0000e+00                            $Fuel, 11904, Middle
-mt1190401  zr-zrh.80t h-zrh.80t
 m1190402   92235.00c -1.0000e+00                               $Fuel, 11904, Top
-mt1190402  zr-zrh.80t h-zrh.80t
 m1190499   26056.00c -1.0000e+00                           $Steel, Stainless 304
 m1190500   92235.00c -1.0000e+00                            $Fuel, 11905, Bottom
-mt1190500  zr-zrh.80t h-zrh.80t
 m1190501   92235.00c -1.0000e+00                            $Fuel, 11905, Middle
-mt1190501  zr-zrh.80t h-zrh.80t
 m1190502   92235.00c -1.0000e+00                               $Fuel, 11905, Top
-mt1190502  zr-zrh.80t h-zrh.80t
 m1190599   26056.00c -1.0000e+00                           $Steel, Stainless 304
 m1190600   92235.00c -1.0000e+00                            $Fuel, 11906, Bottom
-mt1190600  zr-zrh.80t h-zrh.80t
 m1190601   92235.00c -1.0000e+00                            $Fuel, 11906, Middle
-mt1190601  zr-zrh.80t h-zrh.80t
 m1190602   92235.00c -1.0000e+00                               $Fuel, 11906, Top
-mt1190602  zr-zrh.80t h-zrh.80t
 m1190699   26056.00c -1.0000e+00                           $Steel, Stainless 304
 m1190700   92235.00c -1.0000e+00                            $Fuel, 11907, Bottom
-mt1190700  zr-zrh.80t h-zrh.80t
 m1190701   92235.00c -1.0000e+00                            $Fuel, 11907, Middle
-mt1190701  zr-zrh.80t h-zrh.80t
 m1190702   92235.00c -1.0000e+00                               $Fuel, 11907, Top
-mt1190702  zr-zrh.80t h-zrh.80t
 m1190799   26056.00c -1.0000e+00                           $Steel, Stainless 304
 C
 C    General materials
 m20000     40092.00c -1.0000e+00                                      $Zirconium
-m30000     1001.00c  -1.0000e+00                                  $Water, Liquid
+m30000     1001.00c  -1.1191487328808077e-01                      $Water, Liquid
+           8016.00c  -8.880851267119192e-01
 mt30000    h-h2o.80t
 m30001     6012.00c  -1.0000e+00               $Carbon, Graphite (reactor grade)
 mt30001    grph10.80t
