@@ -36,3 +36,7 @@
 ## Temperature
 
 All materials are defined at a temperature of 293.6 K.
+
+## Nuclear Data
+
+Use ENDF/B-VII.0 library as it is the most up-to-date library available for Serpent.
