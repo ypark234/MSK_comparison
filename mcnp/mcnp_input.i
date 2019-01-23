@@ -364,6 +364,6 @@ tr42    0 0 14                                                     $Safety_blade
 tr43    0 0 7                                                  $Regulating_blade
 C
 C  Source specification 
-kcode 10000 1 20 60
+kcode 1000000 1 20 60
 ksrc  -2.0 -2.0 7.5
 C  ------------------------------  End of file  -----------------------------  C
