@@ -11,3 +11,7 @@ Results of the study will be utilized to improve structure of Python script
 that generates an input file for chosen reactor physics code.
 
 Target reactor physics codes: MCNP, SERPENT, KENO.
+
+Summary of criticality calculation results:
+
+- MCNP6.2: 0.34770 +/- 0.00010
