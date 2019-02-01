@@ -282,8 +282,6 @@ surf 3007 pz 16.0                                                      %Refl_ele
 surf 4541 cylz -2.5 -2.5 1.8                                                  %TR_meat
 surf 4542  pz 0.0                                                           %TR_bot
 surf 4543  pz 20.0                                                          %TR_top
-strans 4542 0 0 10        
-strans 4543 0 0 10 
        
 %    Control shroud
 surf 4001 px 6.0                                                           %Shroud_+x
@@ -302,8 +300,6 @@ surf 4104 py 22.5                                                        %SB_mea
 %    - Blade 1
 surf 4120 pz 0.0                                                     %SB1_meat_bot
 surf 4121 pz 25.0                                                    %SB1_meat_top
-strans 4120 0 0 14        
-strans 4121 0 0 14
  
 %    Regulating blade
 surf 4201 px 7.0                                                         %RB_sheet_+x
@@ -312,8 +308,6 @@ surf 4203 py -1.5                                                        %RB_she
 surf 4204 py 6.5                                                         %RB_sheet_+y
 surf 4205  pz 0.0                                                           %RB_bot
 surf 4206  pz 28.0                                                          %RB_top
-strans 4205 0 0 7        
-strans 4206 0 0 7  
 
 %    Core region
 surf 131 px -5.0                                                             %Core_-x
@@ -453,4 +447,12 @@ set pop 500000 40 20 1
 
 % ** Energy grid reconstruction
 set egrid 5E-4 1E-9 15.0
+
+% ** Surface transformation
+strans 4542 0 0 10        
+strans 4543 0 0 10 
+strans 4120 0 0 14        
+strans 4121 0 0 14
+strans 4205 0 0 7        
+strans 4206 0 0 7  
 %  ------------------------------  End of file  -----------------------------  C
