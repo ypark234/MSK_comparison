@@ -14,14 +14,13 @@ Target reactor physics codes: MCNP, SERPENT, KENO.
 
 Summary of criticality calculation results:
 
+Full core model
 
 - MCNP6.2:  0.34770 +/- 0.00010
 - KENO:     0.34745  +/- 0.00022
-- Serpent2: 0.34815 +/- 0.00014 
+- Serpent2: 0.34815 +/- 0.00014
 
-fuel pin results:
-- KENO: 1.36411 +/- 0.00023
+Single pin model
 
-
-
-
+- MCNP6.2: 1.36419 +/- 0.00012
+- KENO:    1.36411 +/- 0.00023
