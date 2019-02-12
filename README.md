@@ -19,3 +19,5 @@ Summary of criticality calculation results:
 - KENO:    0.35809 +/- 0.00022
 - Serpent2: 0.34815 +/- 0.00014 
 
+fuel pin results:
+-Serpent: 1.36359 +/- 0.00014
