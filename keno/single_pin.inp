@@ -1,0 +1,46 @@
+=csas6 
+simple fuel pin
+ce_v7_endf
+Read Param 
+npg=100000 gen=110 nsk=10 rnd=19073486328125
+End Param 
+Read Composition  
+Fe-56 50002  0 8.61306638827906e-02   end
+graphite 30001  DEN=1.7   end
+U-235 1190100  0 1.8447368020026703e-02 end 
+Fe-56 1190199  0 8.61306638827906e-02  end 
+h2o 30000 den=1  end
+Zr-92 20000 0 4.259170336905159e-02  end
+End composition
+read geometry
+global unit 1
+com="fuel pin"
+Zcylinder 1000 0.5 15 0 
+Zcylinder 1001 1.5 15 0
+Zcylinder 1002 2 15 0 
+plane 1100 Zpl=1 Con=-3
+plane 1200 Zpl=1 Con=-12
+plane 2000 Zpl=1 Con=0
+plane 2001 Zpl=1 Con=-1
+plane 2002 Zpl=1 Con=-14
+plane 2003 Zpl=1 Con=-15
+cuboid 1 2.5 -2.5 2.5 -2.5 15  0
+media 1190100 1 -1000 1001 1100 -1200
+media 1190199 1 -1001 1002 1100 -1200 
+media 50002 1 1002 2002 -2003  
+media 50002 1 -1001 1002 1200 -2002
+media 30001 1 1001 1200 -2002 
+media 20000 1 1000 1100 -1200 
+media 30001 1 1001 2001 -1100
+media 50002 1 -1001 1002 2001 -1100
+media 50002 1 1002 2000 -2001
+media 30000 1 -1002 1
+media 30000 1 -2000 1
+media 30000 1 2003
+boundary 1
+end geometry
+read bounds
+all=reflect
+end bounds
+end data 
+end
