@@ -10,7 +10,7 @@ graphite 30001  DEN=1.7   end
 U-235 1190100  0 1.8447368020026703e-02 end 
 Fe-56 1190199  0 8.61306638827906e-02  end 
 h2o 30000 den=1  end
-Zr-92 20000 0 4.343444808841109e-02  end
+Zr-92 20000 0 4.259170336905159e-02  end
 End composition
 read geometry
 global unit 1

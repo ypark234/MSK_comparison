@@ -16,11 +16,12 @@ Summary of criticality calculation results:
 
 
 - MCNP6.2:  0.34770 +/- 0.00010
-- KENO:    0.34765 +/- 0.00020
+- KENO:     0.34745  +/- 0.00022
 - Serpent2: 0.34815 +/- 0.00014 
 
 fuel pin results:
--KENO:  1.36394 +/- 0.00020
+- KENO: 1.36411 +/- 0.00023
+
 
 
 
